@@ -328,3 +328,18 @@ throws throw 函头 函体 不定 必抛 不理 上层
 抽象 接口 构造 普变 非象法 象法类 静法 任静变
 （把）秋刀鱼（喂给）大象（吃），（用手电筒）照（大象的）口（看吃完没有），（发现吃完了）（又拿来）狗（肉）粥（给大象吃），（趁大象在吃）抱（大象的）（粪）便（出去），（发现墙上有朵花）飞（上）墙）（去采摘）花，（在墙上看到一个）长发女，（忍不住）（射）精（在她的）（头）发（上），（居然这个是任静），任静（一）鞭（甩过来）
 -----------------------------------------------------------------
+
+Shiro Features
+Authentication     Authorization
+Session Management Cryptography
+Web Support        Caching
+Concurrency Testing "Run as" Remember me
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Shiro Detailed Architecture
+Security Manager(Authenticator(Authentication Strategy)、Authorizer、Session Manager、Pluggable Realms、Session Dao、Cache Manager)、Cryptography
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
