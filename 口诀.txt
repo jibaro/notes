@@ -416,7 +416,7 @@ public class ProxyTest {
 	}
 }
 -----------------------------------------------------------------
-
+j动（jdk动态代理） Util（ProxyUtil） 实现 （调处）InvocationHandler （Object target） （Object invoke） （Object proxy） （Method method） Object[] （throws Throwable） before （Object result） （method.invoke） （target, args） after （return result;） 构造 target ProxyTest main （Object proxyedObject） （new UserServiceImpl()） new ProxyUtil(proxyedObject) UserService 
 -----------------------------------------------------------------
 
 cglib代理
