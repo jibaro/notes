@@ -457,7 +457,7 @@ public class CGProxyTest {
 }
 -----------------------------------------------------------------
 CGProxy、implements MethodInterceptor、Object target、public CGProxy(Object target)、Object intercept、Object arg0、Method arg1、Object[] arg2、MethodProxy proxy、throws Throwable、before、Object result、proxy.invokeSuper、(arg0, arg2)、after、return result;、Object getProxyObject、Enhancer enhancer = new Enhancer();、enhancer.setSuperclass、this.target.getClass()、enhancer.setCallback(this)、return enhancer.create();、CGProxyTest main、Object proxyedObject = new UserServiceImpl();、CGProxy cgProxy、new CGProxy(proxyedObject);、UserService proxyObject、(UserService) cgProxy.getProxyObject();、proxyObject.getUser(1);、proxyObject.addUser(new User());
-死猪袋，屎发蓝，橡套，构踢，胀箭，胀肠，发长，
+死猪袋，屎发蓝，橡套，狗踢，胀箭，酱肠鲮，象枣鲨鱼，狒袋朵，银人，拔斧
 -----------------------------------------------------------------
 
 Oracle
