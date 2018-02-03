@@ -457,7 +457,7 @@ public class CGProxyTest {
 }
 -----------------------------------------------------------------
 CGProxy、implements MethodInterceptor、Object target、public CGProxy(Object target)、Object intercept、Object arg0、Method arg1、Object[] arg2、MethodProxy proxy、throws Throwable、before、Object result、proxy.invokeSuper、(arg0, arg2)、after、return result;、Object getProxyObject、Enhancer enhancer = new Enhancer();、enhancer.setSuperclass、this.target.getClass()、enhancer.setCallback(this)、return enhancer.create();、CGProxyTest main、Object proxyedObject = new UserServiceImpl();、CGProxy cgProxy、new CGProxy(proxyedObject);、UserService proxyObject、(UserService) cgProxy.getProxyObject();、proxyObject.getUser(1);、proxyObject.addUser(new User());
-死猪袋，屎发蓝，橡套，狗踢，胀箭，酱肠鲮，快餐鱿，象枣鲨鱼，狒袋朵，银人，拔斧，姜狗，大屌蕉，窗棂长衣，盎火，翻盖，象脚袋胀，信耀汉，电焊千秋女，猪肚咖喱，银河说哥白尼，翻英汉床灶
+（一只）死猪（在）袋（里），屎（和）（头）发（是）蓝（色的），（戴上）橡（胶）（手）套（准备处理），狗（过来）踢（了一下），（猪体）胀（裂）（射出）箭，（猪肠子露出来了）酱（在）肠（里）（肠子里还有）鲮（鱼），（以及）（都城）快餐（的）鱿（鱼），（此时）象（背着）枣（和）鲨鱼（回来了），（还有一只）狒（头上戴着花）朵（被装在）袋（子里），（一个）银（色的）人（骑着大象），（见此情此景，银人）拔斧，（喂了一块）姜（给）狗（吃），（还有）大屌蕉，（狗从）窗棂（旁拿过）长衣（穿起来），（提起）盎火，翻盖（做盾牌），（此时）象脚（边的一只）袋（鼠尸体又跟着）（膨）胀（起来），（见情况不能控制）（写）信（给）耀汉（过来），（另一边的耀汉正在用）电焊（制作一个）千秋（给）女（儿玩），（晚上做的晚饭是）猪肚（装）咖喱，（吃晚饭后，和女儿躺在草地上）（看着天上的）银河说哥白尼，（回到屋后）翻英汉（字）（在）床灶（上），（耀汉注意到）（垃圾）笧（里）（有）米，（还有）奖（状）（装在）（塑料）袋（子里）（塑料袋子里还有）浆（糊），（突然）（一张）信用（被）（身上着）火（的）（老）鼠（衔着走过），（送）信（的）树袋（熊）（刚好出现），（一个）大掌（拍死了老鼠），蛹（从）（老鼠）腹（部）（跑了出来）（还有）豆浆，（耀汉赶紧从）（放着）书（的）台脚（下的）斗（车里）（取出一把）遮，（用遮对着）箱（子）敲（检查还有没有其他生物在屋子里），（一敲），（出来一只）大（蠄）蠽，（它的钳子还）夹（着）鸭肉
 -----------------------------------------------------------------
 
 Oracle
