@@ -448,12 +448,14 @@ j动（jdk动态代理）、ProxyUtil、实现、（调处）InvocationHandler�
 树形记忆测试
 -----------------------------------------------------------------
 j动 ProxyUtil （ProxyTest Main）
-
+机动（战士）（在）（北京）大桥（上）（拦了一辆）车（车上装着）（大）米
 	ProxyUtil （Object target） （Object invoke） 构造 getTarget setTarget
+	袋（鼠）跳（起来）（溅起的）（泥）浆（弄脏了）（大象的）头，（站在大象背上的）雕，呕粥（出来还击袋鼠），（还扔）（含）镉（的）石头
 		（Object invoke） （Object proxy） before （Object result） after （return result）
 			（Object proxy） （Method method） （Object[] args） （throws Throwable）
 			（Object result） method.invoke (target, args)
 	（ProxyTest Main） （Object proxyedObject） ProxyUtil UserService getUser addUser
+	
 		Object proxyedObject = new UserServiceImpl()
 		ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
 		UserService proxyObject = (UserService) Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
