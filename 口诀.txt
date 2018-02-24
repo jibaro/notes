@@ -447,7 +447,17 @@ j动（jdk动态代理）、ProxyUtil、实现、（调处）InvocationHandler�
 -----------------------------------------------------------------
 树形记忆测试
 -----------------------------------------------------------------
+j动 ProxyUtil （ProxyTest Main）
 
+	ProxyUtil （Object target） （Object invoke） 构造 getTarget setTarget
+		（Object invoke） （Object proxy） before （Object result） after （return result）
+			（Object proxy） （Method method） （Object[] args） （throws Throwable）
+			（Object result） method.invoke (target, args)
+	（ProxyTest Main） （Object proxyedObject） ProxyUtil UserService getUser addUser
+		Object proxyedObject = new UserServiceImpl()
+		ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
+		UserService proxyObject = (UserService) Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
+				UserServiceImpl.class.getInterfaces(), proxyUtils);
 -----------------------------------------------------------------
 
 cglib代理
