@@ -463,9 +463,12 @@ j动 ProxyUtil （ProxyTest Main）
 		Object proxyedObject = new UserServiceImpl();
 		（用）橡皮（使劲擦拭）大（幅）奖（状）（奖状着火了），（引燃了整个）（农村）信用（社），火鼠（被火烧着的老鼠）（跑出来）
 		ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
-		
+		袋（鼠）跳（起来），（导致）（装）信（件的）袋（子）断（裂），（唯有用一条）背带（补起来）
 		UserService proxyObject = (UserService) Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
 				UserServiceImpl.class.getInterfaces(), proxyUtils);
+		（把）（一只）蛹（用打火机点着）火（搭乘）大疆（无人机上，空投到袋里），（整）袋（爆开）（裂成）三（块）大石，（三块大石再裂开）（出来一些）
+		（用）酸（泡过）（且）绑（着）线（的）（木柄）（手）榴弹，（还有）辐射雷，（一个）曱甴（的触动引起了爆炸），（炸）弹跳（起），（爆开）
+		，（撒出遮天盖日的）糠（飘）下
 -----------------------------------------------------------------
 
 cglib代理
