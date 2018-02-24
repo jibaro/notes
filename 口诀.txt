@@ -452,12 +452,18 @@ j动 ProxyUtil （ProxyTest Main）
 	ProxyUtil （Object target） （Object invoke） 构造 getTarget setTarget
 	袋（鼠）跳（起来）（溅起的）（泥）浆（弄脏了）（大象的）头，（站在大象背上的）雕，呕粥（出来还击袋鼠），（还扔）（含）镉（的）石头
 		（Object invoke） （Object proxy） before （Object result） after （return result）
+		象（背上的）雕（飞下去）（啄爆一个）涨（起来的）袋，（炸出一堆）壁虎（和）浆果（引来一群）盎蜂，（雕唯有）翻（开）盖（躲进去避避）
 			（Object proxy） （Method method） （Object[] args） （throws Throwable）
+			涨袋（打开一看）（里面有一只）狒狒（在啃着）长须参，（见到人还）扔（东西砸）人
 			（Object result） method.invoke (target, args)
+			浆果（泡在）花雕（酒里），（酒埋在）泰山（脚下）
 	（ProxyTest Main） （Object proxyedObject） ProxyUtil UserService getUser addUser
-	
-		Object proxyedObject = new UserServiceImpl()
+	（货）车（上）（装着一包包）（大）米，（车上还有一缸黄豆）浆（里）（泡着）大象，（旁边的一个）袋（子）跳（起来），溶（化）（并）（着）火
+	，（燃烧过程中）（流出）鸡鸭油
+		Object proxyedObject = new UserServiceImpl();
+		（用）橡皮（使劲擦拭）大（幅）奖（状）（奖状着火了），（引燃了整个）（农村）信用（社），火鼠（被火烧着的老鼠）（跑出来）
 		ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
+		
 		UserService proxyObject = (UserService) Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
 				UserServiceImpl.class.getInterfaces(), proxyUtils);
 -----------------------------------------------------------------
