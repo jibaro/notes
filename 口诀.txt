@@ -458,8 +458,8 @@ j动 ProxyUtil （ProxyTest Main）
 			（Object result） method.invoke (target, args)
 			浆果（泡在）花雕（酒里），（酒埋在）泰山（脚下）
 	（ProxyTest Main） （Object proxyedObject） ProxyUtil UserService getUser addUser
-	（货）车（上）（装着一包包）（大）米，（车上还有一缸黄豆）浆（里）（泡着）大象，（旁边的一个）袋（子）跳（起来），溶（化）（并）（着）火
-	，（燃烧过程中）（流出）鸡鸭油
+	（货）车（上）（装着一包包）（大）米，（车上还有一缸黄豆）浆（里）（泡着）（豆腐）皮（和）大象，（旁边的一个）袋（子）跳（起来）
+	，溶（化）（并）（着）火，（燃烧过程中）（流出）鸡鸭油
 		Object proxyedObject = new UserServiceImpl();
 		（用）橡皮（使劲擦拭）大（幅）奖（状）（奖状着火了），（引燃了整个）（农村）信用（社），火鼠（被火烧着的老鼠）（跑出来）
 		ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
