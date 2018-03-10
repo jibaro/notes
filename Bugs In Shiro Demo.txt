@@ -1,0 +1,2 @@
+、updateSelf.ftl，47行，script的src应该为"${basePath}/js/common/jquery/jquery.form-2.82.js?${_v}"，而不是"/js/common/jquery/jquery.form-2.82.js?${_v}"，现在ajaxForm方法不生效
+、mypermission.ftl，27行，"loding"，实则应为"loading"
