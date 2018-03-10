@@ -570,8 +570,8 @@ singleton prototype request session (global session)
 
 @Autowired 根据类型注入
 @Resource 默认根据名字注入，其次按照类型搜索
-@Autowired @Qualifier("userService") 两个结合起来可以根据名字和类型注入
+@Autowired @Qualifier("userService") 两个结合起来可以根据名字和类型注入？
 -----------------------------------------------------------------
-自载 类型 资源 名类 自载 合格 名类
-
+自载 类型 资源 名类 自载 合格
+住宅 雷蝇 紫猿 明女 猪仔 虾饺
 -----------------------------------------------------------------
