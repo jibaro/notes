@@ -586,3 +586,29 @@ instanceof（实例属） 子子 子父 true 向上 父子 父父 true
 猞猁（追逐一只）鼠，（震落了一只）蜘蛛（掉在）（张）志富（身上），（张志富）草（赶走了蜘蛛），（然而这时一条）响（尾）蛇（钻进了）裤子，（他立马从）葫（芦）壶（倒些）醋（进去驱走蛇）
 -----------------------------------------------------------------
 
+class param<T1, T2> {
+	class A {}
+	class B extends A {}
+	private Class<T1> entityClass;
+	public param() {
+		Type type = getClass().getGenericSuperclass();
+		System.out.println("getClass() == " + getClass());
+		System.out.println("type = " + type);
+		Type trueType = ((ParameterizedType) type).getActualTypeArguments()[0];
+		System.out.println("trueType1 = " + trueType);
+		trueType = ((ParameterizedType) type).getActualTypeArguments()[1];
+		System.out.println("trueType2 = " + trueType);
+		this.entityClass = (Class<T1>) trueType;
+		System.out.println("entityClass = " + entityClass);
+
+		B t = new B();
+		type = t.getClass().getGenericSuperclass();
+		System.out.println("B is A's super class :" + ((ParameterizedType) type).getActualTypeArguments().length);
+	}
+}
+public class ClassDemo extends param<MyClass, MyInvoke> {
+	public static void main(String[] args) {ClassDemo classDemo = new ClassDemo();}
+}
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
