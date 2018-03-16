@@ -609,6 +609,13 @@ class param<T1, T2> {
 public class ClassDemo extends param<MyClass, MyInvoke> {
 	public static void main(String[] args) {ClassDemo classDemo = new ClassDemo();}
 }
+输出结果：
+getClass() == class reflectTest.reflectTest01.ClassDemo
+type = reflectTest.reflectTest01.param<reflectTest.reflectTest01.MyClass, reflectTest.reflectTest01.MyInvoke>
+trueType1 = class reflectTest.reflectTest01.MyClass
+trueType2 = class reflectTest.reflectTest01.MyInvoke
+entityClass = class reflectTest.reflectTest01.MyInvoke
+B is A's super class :0
 -----------------------------------------------------------------
 
 -----------------------------------------------------------------
