@@ -631,5 +631,10 @@ shiro demo
 			controller BaseController CommonController
 			蠄（蜍）操（一颗）鼻屎，（结果鼻屎糊住了它的）肛门
 			dao U Mapper Permission Role RolePermission User UserRole
+			mapper U Mapper Permission Role RolePermission User UserRole
+			model U Permission Role RolePermission User UserRole
+		core config freemarker mybatis shiro statics tags
+		哥（斯拉）扛（着肥料跑了），（追出来的有）火（麒）麟，（它隐私部位打着）马（赛）克，（还有）猫，（猫身上背着）铁支。（他们向哥斯拉）（发）射（了）（一只）锣（并击中），（哥斯拉被气得）撕大衣，踢（飞）（一坨）狗屎（作为还击）
+			shiro cache filter listenter service session token CustomShiroSessionDAO
 			
 -----------------------------------------------------------------
