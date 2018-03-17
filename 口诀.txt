@@ -630,5 +630,6 @@ shiro demo
 		（王）嘉文（的）Ctrl（键）（被他用）刀（撬开）（然后用）抹布（去擦拭键盘）（抹着抹着，开始）抹屌，（嘉文high得）踢（了一脚）门，（吓得旁边的）牛跳（了起来）
 			controller BaseController CommonController
 			蠄（蜍）操（一颗）鼻屎，（结果鼻屎糊住了它的）肛门
-			dao 
+			dao U Mapper Permission Role RolePermission User UserRole
+			
 -----------------------------------------------------------------
