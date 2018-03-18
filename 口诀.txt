@@ -631,12 +631,17 @@ shiro demo
 			controller BaseController CommonController
 			蠄（蜍）操（一颗）鼻屎，（结果鼻屎糊住了它的）肛门
 			dao U Mapper Permission Role RolePermission User UserRole
+			
 			mapper U Mapper Permission Role RolePermission User UserRole
+			
 			model U Permission Role RolePermission User UserRole
+			
 		core config freemarker mybatis shiro statics tags
 		哥（斯拉）扛（着肥料跑了），（追出来的有）火（麒）麟，（它隐私部位打着）马（赛）克，（还有）猫，（猫身上背着）铁支。（他们向哥斯拉）（发）射（了）（一只）锣（并击中），（哥斯拉被气得）撕大衣，踢（飞）（一坨）狗屎（作为还击）
 			shiro cache filter listener service session token CustomShiroSessionDAO（CSSD）
-			食肉（中的）盖茨（坐在）（一辆）飞度（FIT）（里面），（开车的是）李晨，（李晨被一块突如其来的）蛇皮（吓到），（车子撞上）石山，（附近）踢球（的一群小孩赶过来），（从）C（尸体堆中）（捡起了一块）SSD（solid state drive，固态硬盘）
+			食肉（中的）盖茨（坐在）（一辆）飞度（FIT）（里面），（开车的是）李晨，（李晨被一块突如其来的）蛇皮（吓到），（车子撞上）石山，（附近）踢球（的一群小孩赶过来），（从车子里）扛（出）尸（体）（到）沙（子）（堆成的）岛（上）
 				cache impl JedisManager JedisShiroCache JedisShiroSessionRepository ShiroCacheManager VCache
+				盖茨（用）归参（喂）蚱蜢；谢诗琪（则用）（嵌有）结石（的）雪梨（和）沙琪玛喂狗
+				filter KickoutSessionFilter LoginFilter PermissionFilter RoleFilter ShiroFilterUtils SimpleAuthFilter
 				
 -----------------------------------------------------------------
