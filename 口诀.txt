@@ -643,5 +643,5 @@ shiro demo
 				cache impl JedisManager JedisShiroCache JedisShiroSessionRepository ShiroCacheManager VCache
 				盖茨（用）归参（喂）蚱蜢；谢诗琪（则用）（嵌有）结石（的）雪梨（和）沙琪玛喂狗
 				filter KickoutSession Login Permission Role ShiroFilterUtils SimpleAuth
-				
+				飞度 企鹅蛇 锣镜 泡沫醇 路 石飞游 星脯鹅
 -----------------------------------------------------------------
