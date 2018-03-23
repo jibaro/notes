@@ -648,6 +648,7 @@ shiro demo
 					（一把）遮（挂在）门（上），（行驶中的）捷豹（的门上）。（车撞飞一只）曱甴，（它飞进了）（一间）房子，（落在）鸡生肠（上），（鸡生肠用）簸箕（盛着），（旁边还有）鸡锡，（鸡锡上冒起）紫（色的）泡，（曱甴在这些东西上面）屙屎
 					JedisShiroCache （implements Cache） REDIS_SHIRO_CACHE DB_INDEX jedisManager name SELF 构造 buildCacheKey
 					谢诗琪撒盐（在）鸡（身上），（并且用）绿色棋（子）（摆盘），（完成后随手）丢（烟）头（到）遮（和）袜（子）堆里。（这时候），（浑身是）泥（的）小夫（回来了），狗走（过去迎接），（小夫看着狗没注意到地面），（踩到）白鸡屎
+					
 				filter KickoutSession Login Permission Role ShiroFilterUtils SimpleAuth
 				（一辆）飞度（在行驶路上遇到一只）企鹅，（它嘴里叼着）蛇，（手持）锣（作为盾牌，并且锣上有）镜（面），（它抛洒混和了）泡沫（的甲）醇 （在）（公）路（上），（车子受滑，撞向一块大）石（并）飞（出公路，扎进河里）游（了起来），（河里有一群）星脯（胸牌有星星的）鹅
 				listener CustomSessionListener
