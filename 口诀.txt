@@ -645,14 +645,14 @@ shiro demo
 					impl CustomShiroCacheManager JedisShiroCacheManager
 					（用）（一块）归参（引诱）蠄蜍（下来），（它正）（扛着）旗（站在）门（上），（不料被它用屎袭击），（不过用）遮（挡住了）屎，（打开）（飞）机门，（把伞上的屎抖出去）
 					JedisManager jedisPool getJedis returnResource getValueByKey deleteByKey saveValueByKey getJedisPool setJedisPool AllSession
-					（一把）遮（挂在）门（上），（行驶中的）捷豹（的门上）。（车撞飞一只）曱甴，（它飞进了）（一间）房子，（落在）鸡生肠（上），（鸡生肠用）簸箕（盛着），（旁边还有）鸡锡，（鸡锡上冒起）紫（色的）泡，（曱甴在这些东西上面）屙屎
+					（一把）遮（挂在）门（上），（行驶中的）捷豹（的门上）。（车撞飞一只）曱甴，（它飞进了）（一间）房子，（落在）鸡生肠（上），（鸡生肠用）簸箕（盛着），（旁边还有）鸡锡，（鸡锡上冒起）紫（色的）泡，（曱甴在这些东西上面）屙屎，（还有一组getter和setter以及接口被实现方法未作记忆：getName、setName、get、put、remove、clear、size、keys、values）
 					JedisShiroCache （implements Cache） REDIS_SHIRO_CACHE DB_INDEX jedisManager name SELF 构造 buildCacheKey
 					谢诗琪撒盐（在）鸡（身上），（并且用）绿色棋（子）（摆盘），（完成后随手）丢（烟）头（到）遮（和）袜（子）堆里。（这时候），（浑身是）泥（的）小夫（回来了），狗走（过去迎接），（小夫看着狗没注意到地面），（踩到）白鸡屎
 					JedisShiroSessionRepository REDIS_SHIRO_SESSION REDIS_SHIRO_ALL SESSION_VAL_TIME_SPAN DB_INDEX jedisManager saveSession deleteSession getSession getAllSessions buildRedisSessionKey
 					
 					ShiroCacheManager getCache destroy
 					
-					VCache 
+					VCache （JedisManager J） get set setex getVByMap setVByMap delByMapKey getVByList getLenBySet delSetByKey srandmember setVBySet getSetByKey setVByList getVByList getLenByList delByKey exists returnResource
 				filter KickoutSession Login Permission Role ShiroFilterUtils SimpleAuth
 				（一辆）飞度（在行驶路上遇到一只）企鹅，（它嘴里叼着）蛇，（手持）锣（作为盾牌，并且锣上有）镜（面），（它抛洒混和了）泡沫（的甲）醇 （在）（公）路（上），（车子受滑，撞向一块大）石（并）飞（出公路，扎进河里）游（了起来），（河里有一群）星脯（胸牌有星星的）鹅
 				listener CustomSessionListener
