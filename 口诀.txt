@@ -645,7 +645,7 @@ shiro demo
 					impl CustomShiroCacheManager JedisShiroCacheManager
 					（用）（一块）归参（引诱）蠄蜍（下来），（它正）（扛着）旗（站在）门（上），（不料被它用屎袭击），（不过用）遮（挡住了）屎，（打开）（飞）机门，（把伞上的屎抖出去）
 					JedisManager jedisPool getJedis returnResource getValueByKey deleteByKey saveValueByKey getJedisPool setJedisPool AllSession
-					
+					（一把）遮（挂在）门（上），（行驶中的）捷豹（的门上）。（车撞飞一只）曱甴，（它飞进了）（一间）房子，（落在）鸡生肠（上），（鸡生肠用）簸箕（盛着），（旁边还有）鸡锡，（鸡锡上冒起）紫（色的）泡，（曱甴在这些东西上面）屙屎
 				filter KickoutSession Login Permission Role ShiroFilterUtils SimpleAuth
 				（一辆）飞度（在行驶路上遇到一只）企鹅，（它嘴里叼着）蛇，（手持）锣（作为盾牌，并且锣上有）镜（面），（它抛洒混和了）泡沫（的甲）醇 （在）（公）路（上），（车子受滑，撞向一块大）石（并）飞（出公路，扎进河里）游（了起来），（河里有一群）星脯（胸牌有星星的）鹅
 				listener CustomSessionListener
