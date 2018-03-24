@@ -664,6 +664,19 @@ shiro demo
 					石斑鱼（在）石缝（屙下）粪便，路飞（在水下拿着）叉（子）（对石斑鱼放）电，（梁）家辉（在船上）屙（了一个）雷，（雷爆炸解决了水下的人），（家辉拿）尤加利（树枝绑住一条）肥肠（开始钓石斑鱼），（此时）（一部）三星（手机）漂（过水面），（三星手机边框纹着）花边
 				session CustomSessionManager SessionStatus ShiroSessionRepository
 				石山（上），蠄蜍（在捕）蚊，蛇（拖）（一只）老鼠（进地下），（这时）（一条）（丧）尸（穿着）（衬）衫（从）裂（开的石山里爬出来）
+					CustomSessionManager SESSION_STATUS shiroSessionRepository customShiroSessionDAO getAllUser getSimplePrincipalCollectionByUserId getSession getSessionBo changeSessionStatus forbidUserById setShiroSessionRepository setCustomShiroSessionDAO
+					
+					SessionStatus onlineStatus isOnlineStatus getOnlineStatus setOnlineStatus
+					
+					ShiroSessionRepository saveSession deleteSession getSession getAllSessions
+					
 				token TokenManager SampleRealm ShiroToken
 				踢球，（球飞出去），（砸）塌（了）门，（这时），（一辆）三菱（开出来），射（避孕）套（作为反击）
+					TokenManager realm customSessionManager getToken getSession getNickname getUserId setVal2Session getVal2Session getYZM login isLogin logout clearNowUserAuth clearUserAuthByUserId clearUserAuthByUserId
+					
+					SampleRealm （extends AuthorizingRealm） （userService permissionService roleService 我认为这三个service不用记） doGetAuthenticationInfo doGetAuthorizationInfo clearCachedAuthorizationInfo clearCachedAuthorizationInfo
+					
+					ShiroToken （extends UsernamePasswordToken） 构造 pswd getPswd setPswd
+				CustomShiroSessionDAO （extends AbstractSessionDAO） shiroSessionRepository getShiroSessionRepository setShiroSessionRepository update delete getActiveSessions doCreate doReadSession
+				
 -----------------------------------------------------------------
