@@ -659,6 +659,9 @@ shiro demo
 				李晨（用）卡（车）（拉着）雪梨
 				service ShiroManagerImpl ShiroManager
 				（用）蛇皮（和）（用）十蚊（钱）（买来的）烟（草）（包了一支烟，并抽了起来），（不小心）烧（着自己的）毛（了）
+				（带回来一条）（用）蛇皮（包住的）石斑鱼，（和）烧馒（头）（一起吃）
+					ShiroManagerImpl shiroFilterFactoryBean loadFilterChainDefinitions getFixedAuthRule reCreateFilterChains setShiroFilterFactoryBean
+					
 				session CustomSessionManager SessionStatus ShiroSessionRepository
 				石山（上），蠄蜍（在捕）蚊，蛇（拖）（一只）老鼠（进地下），（这时）（一条）（丧）尸（穿着）（衬）衫（从）裂（开的石山里爬出来）
 				token TokenManager SampleRealm ShiroToken
