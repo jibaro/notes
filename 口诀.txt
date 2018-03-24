@@ -667,9 +667,9 @@ shiro demo
 					CustomSessionManager SESSION_STATUS shiroSessionRepository customShiroSessionDAO getAllUser getSimplePrincipalCollectionByUserId getSession getSessionBo changeSessionStatus forbidUserById setShiroSessionRepository setCustomShiroSessionDAO
 					
 					SessionStatus onlineStatus isOnlineStatus getOnlineStatus setOnlineStatus
-					
+					蛇（把）（老）鼠（拖进）地（洞）（后），（把老鼠埋在）烟丝（里），（用）袈裟（包着），（然后挂在）桉（树）（上的）蓝（色）（螺）丝钉（上）
 					ShiroSessionRepository saveSession deleteSession getSession getAllSessions
-					
+					十三姨（用）鸡生肠（绑住）鸡，（然后去）屙屎（了）
 				token TokenManager SampleRealm ShiroToken
 				踢球，（球飞出去），（砸）塌（了）门，（这时），（一辆）三菱（开出来），射（避孕）套（作为反击）
 					TokenManager realm customSessionManager getToken getSession getNickname getUserId setVal2Session getVal2Session getYZM login isLogin logout clearNowUserAuth clearUserAuthByUserId clearUserAuthByUserId
