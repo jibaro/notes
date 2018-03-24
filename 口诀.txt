@@ -648,8 +648,8 @@ shiro demo
 					（一把）遮（挂在）门（上），（行驶中的）捷豹（的门上）。（车撞飞一只）曱甴，（它飞进了）（一间）房子，（落在）鸡生肠（上），（鸡生肠用）簸箕（盛着），（旁边还有）鸡锡，（鸡锡上冒起）紫（色的）泡，（曱甴在这些东西上面）屙屎，（还有一组getter和setter以及接口被实现方法未作记忆：getName、setName、get、put、remove、clear、size、keys、values）
 					JedisShiroCache （implements Cache） REDIS_SHIRO_CACHE DB_INDEX jedisManager name SELF 构造 buildCacheKey
 					谢诗琪撒盐（在）鸡（身上），（并且用）绿色棋（子）（摆盘），（完成后随手）丢（烟）头（到）遮（和）袜（子）堆里。（这时候），（浑身是）泥（的）小夫（回来了），狗走（过去迎接），（小夫看着狗没注意到地面），（踩到）白鸡屎
-					JedisShiroSessionRepository REDIS_SHIRO_SESSION REDIS_SHIRO_ALL SESSION_VAL_TIME_SPAN DB_INDEX jedisManager saveSession deleteSession getSession getAllSessions buildRedisSessionKey
-					
+					JedisShiroSessionRepository REDIS_SHIRO_SESSION REDIS_SHIRO_ALL SESSION_VAL_TIME_SPAN DB_INDEX jedisManager saveSession deleteSession getSession getAllSessions buildRedisSessionKey getJedisManager setJedisManager
+					（把）结石雪梨（埋进）绿色沙（子里），（然后用）镭射（指着沙堆引诱）鹅（去吃梨）——（其实这个陷阱）——用丝袜（和）（领）tie（绑着）书本（悬挂在沙堆之上）。丢（一个）烟（头）（过去），（就让书本落下来了）。（鹅的）睫毛（受颤），（感受到了危险降临，但来不及了）。（这时），（一只全息）3D狗（跑过去）夹（住）鹅锡（救走了鹅），（带至）避雷（针下），（给）蒜鸡（鹅吃）。（又用）狗屎（吸引一些）蚱蜢（过来给鹅吃）
 					ShiroCacheManager getCache destroy
 					
 					VCache （JedisManager J） get set setex getVByMap setVByMap delByMapKey getVByList getLenBySet delSetByKey srandmember setVBySet getSetByKey setVByList getVByList getLenByList delByKey exists returnResource
