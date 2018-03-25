@@ -665,12 +665,12 @@ shiro demo
 					石斑鱼（在）石缝（屙下）粪便，路飞（在水下拿着）叉（子）（对石斑鱼放）电，（梁）家辉（在船上）屙（了一个）雷，（雷爆炸解决了水下的人），（家辉拿）尤加利（树枝绑住一条）肥肠（开始钓石斑鱼），（此时）（一部）三星（手机）漂（过水面），（三星手机边框纹着）花边
 				session CustomSessionManager SessionStatus ShiroSessionRepository
 				石山（上），蠄蜍（在捕）蚊，蛇（拖）（一只）（老）鼠（进）地（下），（这时）（一条）（丧）尸（穿着）（衬）衫（从）裂（开的石山里爬出来）
-					CustomSessionManager SESSION_STATUS shiroSessionRepository customShiroSessionDAO getAllUser getSimplePrincipalCollectionByUserId getSession getSessionBo changeSessionStatus forbidUserById setShiroSessionRepository setCustomShiroSessionDAO
-					
+					CustomSessionManager SESSION_STATUS （shiroSessionRepository customShiroSessionDAO 不作记忆） getAllUser getSimplePrincipalCollectionByUserId getSession getSessionBo changeSessionStatus forbidUserById （setShiroSessionRepository setCustomShiroSessionDAO 不作记忆）
+					蠄蜍（追逐）蚊（子），沙师弟（一路跟过来，然后不知怎么走了），（这时遇到一个）骑（着）鹅（的）爷（爷），（就跟着爷爷走了），（最后遇到）（李）嘉欣，（她在把）白鸽（放进）白（色）油盎，（沙师弟看了按捺不住），解衫，（上去舔李嘉欣）袈裟（下的）波。（这时）青蛇（咬着）CD，（用CD擦出火花引爆）火药，（火药在）白（色）桉（下）
 					SessionStatus onlineStatus isOnlineStatus getOnlineStatus setOnlineStatus
 					蛇（把）（老）鼠（拖进）地（洞）（后），（把老鼠埋在）烟丝（里），（用）袈裟（包着），（然后挂在）桉（树）（上的）蓝（色）（螺）丝钉（上）
 					ShiroSessionRepository saveSession deleteSession getSession getAllSessions
-					十三姨（用）鸡生肠（绑住）鸡，（然后去）屙屎（了）
+					十三姨（用）鸡生肠（绑住）鸡（和）鹅，（然后用刷子帮它们）刷身
 				token TokenManager SampleRealm ShiroToken
 				踢球，（球飞出去），（砸）塌（了）门，（这时），（一辆）三菱（开出来），射（避孕）套（作为反击）
 					TokenManager SampleRealm customSessionManager getToken getSession getNickname getUserId getYZM getVal2Session setVal2Session login logout isLogin clearNowUserAuth clearUserAuthByUserId clearUserAuthByUserId
