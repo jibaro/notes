@@ -685,4 +685,6 @@ shiro demo
 					鼠兔（争抢一块）归参，（鼠争不过），（用）Ubuntu（呼唤）狗走（过来）烧炮，（最后兔被吓走），（为了报答狗），（鼠给了狗）鸡肾，（鸡肾上面浇了）（蜂）蜜（芝）麻
 				CustomShiroSessionDAO （extends AbstractSessionDAO） shiroSessionRepository getShiroSessionRepository setShiroSessionRepository update delete getActiveSessions doCreate doReadSession
 				蠄蜍（跳上）（插在）沙（子）（里的一把）刀，（发现了一个）鼹鼠洞，（于是）（摆放一条）金色死鲨鱼（在洞口作为诱饵），（并且在）凹地（里）（布置了）地雷。（有一只）狗屙屎，（幸好没有引爆地雷）。打卡（打开是一个开锁行为），（把）稻（田里的）绿蛇（放出来捉鼹鼠）
+	resources shiro_base_auth.ini config.properties jdbc.properties log4j.properties shiro-config.properties mybatis-config.xml spring-cache.xml spring-mvc.xml spring-mybatis.xml spring-shiro.xml spring-timer.xml spring.xml
+	
 -----------------------------------------------------------------
