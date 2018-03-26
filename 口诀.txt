@@ -647,7 +647,7 @@ shiro demo
 						CustomShiroCacheManager （implements CacheManager, Destroyable） getCache destroy getShiroCacheManager setShiroCacheManager
 						
 						JedisShiroCacheManager （implements ShiroCacheManager） getCache destroy getJedisManager setJedisManager
-						谢诗琪（在准备发角球的时候）（被）蚊（子）（咬），（用）湿鸡毛（也赶不走蚊子）。（此时）角旗（被人用）大狙（打倒），（谢诗琪被吓得赶紧发球）。（却又发现）脚（上）（有）蛇，（一甩），（蛇飞起来咬住她的）睫毛
+						谢诗琪（在准备发角球的时候）（被）蚊（子）（咬），（用）湿鸡毛（也赶不走蚊子）。（此时）角旗（被人用）大狙（AWP）（打倒），（谢诗琪被吓得赶紧发球）。（却又发现）脚（上）（有）蛇，（一甩），（蛇飞起来咬住她的）睫毛
 					JedisManager jedisPool getJedis returnResource getValueByKey deleteByKey saveValueByKey getJedisPool setJedisPool AllSession
 					（一把）遮（挂在）门（上），（行驶中的）捷豹（的门上）。（车撞飞一只）曱甴，（它飞进了）（一间）房子，（落在）鸡生肠（上），（鸡生肠用）簸箕（盛着），（旁边还有）鸡锡，（鸡锡上冒起）紫（色的）泡，（曱甴在这些东西上面）屙屎
 					JedisShiroCache （implements Cache） REDIS_SHIRO_CACHE DB_INDEX jedisManager name SELF 构造 buildCacheKey （还有一组getter和setter以及接口被实现方法未作记忆：getName、setName、get、put、remove、clear、size、keys、values）
