@@ -645,7 +645,7 @@ shiro demo
 					impl CustomShiroCacheManager JedisShiroCacheManager
 					（用）（一块）归参（引诱）蠄蜍（下来），（它正）（扛着）旗（站在）门（上），（不料被它用屎袭击），（不过用）遮（挡住了）屎，（打开）（飞）机门，（把伞上的屎抖出去）
 						CustomShiroCacheManager （implements CacheManager, Destroyable） getCache destroy getShiroCacheManager setShiroCacheManager
-						
+						蠄蜍（去）开门，（原来是）（王）嘉文（来了），（他带来了）豆浆，（用）煲（装着），姜（插着）旗（子）（浮在上面），（还有）大枣。（突然），（一块）（沾有）狗屎（的）沙琪玛（掉进煲里）
 						JedisShiroCacheManager （implements ShiroCacheManager） getCache destroy getJedisManager setJedisManager
 						谢诗琪（在准备发角球的时候）（被）蚊（子）（咬），（用）湿鸡毛（也赶不走蚊子）。（此时）角旗（被人用）大狙（AWP）（打倒），（谢诗琪被吓得赶紧发球）。（却又发现）脚（上）（有）蛇，（一甩），（蛇飞起来咬住她的）睫毛
 					JedisManager jedisPool getJedis returnResource getValueByKey deleteByKey saveValueByKey getJedisPool setJedisPool AllSession
