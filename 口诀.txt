@@ -697,5 +697,6 @@ shiro demo
 		
 		spring-cache.xml jedisPoolConfig jedisPool
 		
-		spring-mvc.xml <context:component-scan> <mvc:annotation-driven> <mvc:resources> 
+		spring-mvc.xml <context:component-scan> <mvc:annotation-driven> <mvc:resources> <bean>
+			
 -----------------------------------------------------------------
