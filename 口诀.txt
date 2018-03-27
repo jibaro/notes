@@ -689,5 +689,13 @@ shiro demo
 	紫烟（升起），石碑（后）（躲着）鹅。（把）烟（插到）泥（里），（开始行动）。扛（着）（小）飞（机）（出去），（小飞机）（把）炸弹（投掷在）奔驰（车上）。（一只）箩（筐）（被）火鸡（拖着），（在掩体里按下）（钥）匙扣，（箩筐爆炸），（炸出一堆）菠萝葡萄，抹头（因为飞溅的东西弄脏了头）。雏田（将）戒指按（在）袜子（上），麦（子）爆（炸），（毁了）（河）堤，尸（体）（躺满）路。（旁边的车的）（轮）胎（上插了）羽（毛），屎（黏在）（汽车）玻璃（上）。猹（躲在）桉（树）（上）（看到这一幕）呕（吐了）
 		config.properties domain.cdn domain.www
 		
+		log4j.properties log4j.rootLogger log4j.appender.Console log4j.appender.Console.Target log4j.appender.Console.layout log4j.appender.Console.layout.ConversionPattern
 		
+		shiro-config.properties session.timeout session.validate.timespan
+		
+		mybatis-config.xml typeAliases settings setting defaultExecutorType REUSE
+		
+		spring-cache.xml jedisPoolConfig jedisPool
+		
+		spring-mvc.xml <context:component-scan> <mvc:annotation-driven> <mvc:resources> 
 -----------------------------------------------------------------
