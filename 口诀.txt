@@ -698,5 +698,18 @@ shiro demo
 		spring-cache.xml jedisPoolConfig jedisPool
 		
 		spring-mvc.xml <context:component-scan> <mvc:annotation-driven> <mvc:resources> <bean>
+		
+			<context:component-scan> controller tag
 			
+			<mvc:resources> /images /demo /css /js mapping /** location /
+			
+			<bean> RequestMappingHandlerAdapter FreeMarker Resolver
+				
+				RequestMappingHandlerAdapter messageConverters list MappingJackson2HttpMessageConverter supportedMediaTypes list MediaType
+				
+				FreeMarker FreeMarkerConfigExtend XmlEscape
+				
+				Resolver viewResolverFtl FreeMarkerViewResolver viewResolverCommon viewResolver InternalResourceViewResolver CommonsMultipartResolver
+				
+					FreeMarkerViewResolver prefix suffix viewClass order contentType
 -----------------------------------------------------------------
