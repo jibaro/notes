@@ -720,3 +720,20 @@ shiro demo
 					FreeMarkerViewResolver prefix suffix viewClass order contentType
 -----------------------------------------------------------------
 
+ehcache
+代码：
+CacheManager cm = CacheManager.create("./src/main/resources/ehcache.xml");
+Cache c = cm.getCache("mvc");
+Element se = new Element("eclipse", "开源精神");
+c.put(se);
+Element e = c.get("eclipse");
+System.out.println("Element e的信息：" + e + ", Element e的内容：" + e.getObjectValue());
+c.flush();
+cm.shutdown();
+
+输出内容：
+Element e的信息：[ key = eclipse, value=开源精神, version=1, hitCount=1, CreationTime = 1522327105462, LastAccessTime = 1522327105464 ], Element e的内容：开源精神
+-----------------------------------------------------------------
+ehcache CacheManager Cache se c.put(se) e System c.flush() cm.shutdown()
+
+-----------------------------------------------------------------
