@@ -719,3 +719,4 @@ shiro demo
 				
 					FreeMarkerViewResolver prefix suffix viewClass order contentType
 -----------------------------------------------------------------
+
