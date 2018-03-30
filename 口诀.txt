@@ -739,7 +739,7 @@ ehcache CacheManager Cache se c.put(se) e System c.flush() cm.shutdown()
 	CacheManager cm = CacheManager.create("./src/main/resources/ehcache.xml");
 	（王）嘉文（看到）水（上）（有只）鸭（子），（用）佳能（相机）（拍了下来），（贴在）窗（上），（用）粥（糊住）。（但有）苍蝇（来）咬（粥米）
 	Element se = new Element("eclipse", "开源精神");（K，V）
-	
+	熟烟（从）信（封）（里）（倒出来到）啫喱（上），（为了驱赶）蚊（子），（搞定后），（用）口挖（了一块啫喱）
 	Cache c = cm.getCache("mvc");
 	
 	Element e = c.get("eclipse");
