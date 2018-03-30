@@ -741,9 +741,9 @@ ehcache CacheManager Cache se c.put(se) e System c.flush() cm.shutdown()
 	Element se = new Element("eclipse", "开源精神");（K，V）
 	熟烟（从）信（封）（里）（倒出来到）啫喱（上），（为了驱赶）蚊（子），（搞定后），（用）口挖（了一块啫喱）
 	Cache c = cm.getCache("mvc");
-	
-	Element e = c.get("eclipse");
-	
+	（喂一粒）钙（片）（给）（死）尸，（死尸站起来）（徒手）撕鸭，狗（跑过去）啃（死尸的脚）
+	Element e = c.get("eclipse");（key）
+	丸（子）（在）匙羹（上）
 	System e.getObjectValue()
-	
+	锑桶（里）（装着）鱼，狗（赶走）牛蛙，（防止它偷吃）
 -----------------------------------------------------------------
