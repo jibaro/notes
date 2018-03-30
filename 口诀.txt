@@ -736,5 +736,14 @@ Element e的信息：[ key = eclipse, value=开源精神, version=1, hitCount=1,
 -----------------------------------------------------------------
 ehcache CacheManager Cache se c.put(se) e System c.flush() cm.shutdown()
 （水面上有）鱼鳍，（王）嘉文（看到了），（赶紧倒）钙（片）（进）池（子）（里），（还有）熟烟。（鲨鱼浮了出来），（嘉文）（用）扇拍（打）鲨鱼，丸（子）（在）锑桶（里），（被）斯科拉（提着），（另一只）手握（着）沙刀，（赶来支援嘉文）
+	CacheManager cm = CacheManager.create("./src/main/resources/ehcache.xml");
+	（王）嘉文（看到）水（上）（有只）鸭（子），（用）佳能（相机）（拍了下来），（贴在）窗（上），（用）粥（糊住）。（但有）苍蝇（来）咬（粥米）
+	Element se = new Element("eclipse", "开源精神");（K，V）
+	
+	Cache c = cm.getCache("mvc");
+	
+	Element e = c.get("eclipse");
+	
+	System e.getObjectValue()
 	
 -----------------------------------------------------------------
