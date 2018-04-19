@@ -824,7 +824,7 @@ Activiti
 Activiti createTable delployFlow startFlow findPersonalTask completeTask
 （一只刚宰好的）鸭（提在）舅（的手里），（舅把一些）咖喱（填在鸭子）肚（里），（然后把鸭子放在）（烧着）大火（的）炉（上烤），（同时把一些用）（牛）屎（包着的）蛋（放进去），（接着开动）风轮（扇风，使火更旺），（炉子升起的烟在）熏葡萄。妗（在一旁弹）（吉）他（为舅放松心情）
 	createTable ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml").buildProcessEngine();
-	
+	咖喱肚 菠萝眼球 （朱）古力泡烟丝法拉利 插秧刀 彪破箩枪
 	delployFlow processEngine.getRepositoryService().createDeployment().name("helloworld").addClasspathResource("process.bpmn").addClasspathResource("process.png").deploy();
 	
 	startFlow processEngine.getRuntimeService().startProcessInstanceByKey("HelloWorldKey"); processInstance
