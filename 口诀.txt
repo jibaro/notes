@@ -760,3 +760,81 @@ ehcache CacheManager Cache se c.put(se) e System c.flush() cm.shutdown()
 -----------------------------------------------------------------
 （油）炸干尸（时）（眼）眉（被）火（烧着）（不慌不乱，趁机用这撮火）点（了一根）烟，（突然外面的一辆）taxi（爆）炸（了），（是天上的星）星（打下来的）雷电（引起的）
 -----------------------------------------------------------------
+
+Activiti
+
+	public void createTable() {
+		ProcessEngine processEngine = ProcessEngineConfiguration
+				.createProcessEngineConfigurationFromResource("activiti.cfg.xml").buildProcessEngine();
+		System.out.println("processEngine=" + processEngine);
+
+	}
+	
+	public void delployFlow() {
+
+		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+		Deployment deployment = processEngine.getRepositoryService().createDeployment().name("helloworld")
+				.addClasspathResource("process.bpmn").addClasspathResource("process.png").deploy();
+		System.out.println(deployment.getId());
+		System.out.println(deployment.getName());
+
+	}
+	
+	public void startFlow() {
+
+		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+		RuntimeService runtimeService = processEngine.getRuntimeService();
+		// 用key启动时按照最新的流程图版本定义启动
+		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("HelloWorldKey");
+
+	}
+	
+	public void findPersonalTask() {
+
+		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+		String assignee = "cwh";
+//		String assignee = "menco";
+		List<Task> taskList = processEngine.getTaskService()// 获取任务service
+				.createTaskQuery()// 创建查询对象
+				.taskAssignee(assignee)// 指定查询人
+				.list();
+		if (taskList.size() > 0) {
+			for (Task task : taskList) {
+				System.out.println("待办任务ID:" + task.getId());
+				System.out.println("待办任务name:" + task.getName());
+				System.out.println("待办任务创建时间:" + task.getCreateTime());
+				System.out.println("待办任务办理人:" + task.getAssignee());
+				System.out.println("流程实例ID:" + task.getProcessInstanceId());
+				System.out.println("执行对象ID:" + task.getExecutionId());
+			}
+
+		}
+
+	}
+	
+	public void completeTask() {
+
+		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+		String taskId = "2502";
+		processEngine.getTaskService().complete(taskId);// 完成任务
+		System.out.println("完成任务，任务ID:" + taskId);
+
+	}
+-----------------------------------------------------------------
+Activiti createTable delployFlow startFlow findPersonalTask completeTask
+（一只刚宰好的）鸭（提在）舅（的手里），（舅把一些）咖喱（填在鸭子）肚（里），（然后把鸭子放在）（烧着）大火（的）炉（上烤），（同时把一些用）（牛）屎（包着的）蛋（放进去），（接着开动）风轮（扇风，使火更旺），（炉子升起的烟在）熏葡萄。妗（在一旁弹）（吉）他（为舅放松心情）
+	createTable ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml").buildProcessEngine();
+	
+	delployFlow processEngine.getRepositoryService().createDeployment().name("helloworld").addClasspathResource("process.bpmn").addClasspathResource("process.png").deploy();
+	
+	startFlow processEngine.getRuntimeService().startProcessInstanceByKey("HelloWorldKey"); processInstance
+	
+	findPersonalTask 
+	List<Task> taskList = processEngine.getTaskService()// 获取任务service
+				.createTaskQuery()// 创建查询对象
+				.taskAssignee(assignee)// 指定查询人
+				.list();
+	
+	completeTask processEngine.getTaskService().complete(taskId)
+	
+-----------------------------------------------------------------
