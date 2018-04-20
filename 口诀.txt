@@ -770,7 +770,7 @@ Activiti
 
 	}
 	
-	public void delployFlow() {
+	public void deployFlow() {
 
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 		Deployment deployment = processEngine.getRepositoryService().createDeployment().name("helloworld")
@@ -821,12 +821,12 @@ Activiti
 
 	}
 -----------------------------------------------------------------
-Activiti createTable delployFlow startFlow findPersonalTask completeTask
+Activiti createTable deployFlow startFlow findPersonalTask completeTask
 （一只刚宰好的）鸭（提在）舅（的手里），（舅把一些）咖喱（填在鸭子）肚（里），（然后把鸭子放在）（烧着）大火（的）炉（上烤），（同时把一些用）（牛）屎（包着的）蛋（放进去），（接着开动）风轮（扇风，使火更旺），（炉子升起的烟在）熏葡萄。妗（在一旁弹）（吉）他（为舅放松心情）
 	createTable ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml").buildProcessEngine();
 	咖喱（抹在）肚（子上来放松放松），（这时一只）菠萝（飞进来砸中）眼球，（于是）（朱）古力泡（在）烟丝（水里面），（扔出去砸一辆）法拉利，（一旁）插秧（见此状），（飞）刀（过来），（搞得法拉利像是插秧佬的），（李世）彪（飞身跑去一个）破箩（拿一把）枪（出来自卫）
-	delployFlow processEngine.getRepositoryService().createDeployment().name("helloworld").addClasspathResource("process.bpmn").addClasspathResource("process.png").deploy();
-	
+	deployFlow processEngine.getRepositoryService().createDeployment().name("helloworld").addClasspathResource("process.bpmn").addClasspathResource("process.png").deploy();
+	大火炉 菠萝盎 鸡笼蛇 咖喱店 泥黑龙锅 安哥拉玻璃 白被MM 比银纸 大波
 	startFlow processEngine.getRuntimeService().startProcessInstanceByKey("HelloWorldKey"); processInstance
 	
 	findPersonalTask 
