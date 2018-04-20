@@ -826,9 +826,9 @@ Activiti createTable deployFlow startFlow findPersonalTask completeTask
 	createTable ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml").buildProcessEngine();
 	咖喱（抹在）肚（子上来放松放松），（这时一只）菠萝（飞进来砸中）眼球，（于是）（朱）古力泡（在）烟丝（水里面），（扔出去砸一辆）法拉利，（一旁）插秧（见此状），（飞）刀（过来），（搞得法拉利像是插秧佬的），（李世）彪（飞身跑去一个）破箩（拿一把）枪（出来自卫）
 	deployFlow processEngine.getRepositoryService().createDeployment().name("helloworld").addClasspathResource("process.bpmn").addClasspathResource("process.png").deploy();
-	大火炉 菠萝盎 鸡笼蛇 咖喱店 泥黑龙锅 安哥拉玻璃 白被MM 比银纸 大波
+	大火炉（盛着）（一个里面装着）菠萝（的）盎，（再用筷子）夹（一条）绿（色的小）蛇（放进去），（然后去附近）咖喱店（弄些）“泥”（出来），（貌似是佐料），（用一个刻着）黑龙（的）锅（装着）。（发现泥中有名贵的）安哥拉玻璃，（拿去送给躺在）白被（子上的）MM，（再被）比银纸（她），（就开始玩弄起她的）大波（了）
 	startFlow processEngine.getRuntimeService().startProcessInstanceByKey("HelloWorldKey"); processInstance
-	
+	（沾着）屎（的）蛋（裂开），（跑出一条）（小）火龙，（用）皮鞭（制服它），（并且放）鸡笼（里的）蛇（看守住它）。烧（一只）大菠萝，（用其产生的浓）烟（熏）北芪，（然后把北芪喂给小龙吃），（小龙进化成）黑龙，（有）（金）黄（色的）背鳍
 	findPersonalTask 
 	List<Task> taskList = processEngine.getTaskService()// 获取任务service
 				.createTaskQuery()// 创建查询对象
