@@ -888,16 +888,16 @@ public class Client {
 		Socket s = new Socket("127.0.0.1", 8888);
 
 		// 创建要上传的文件对象
-		InputStream input = new FileInputStream("F:\\b.txt");
+		InputStream in = new FileInputStream("F:\\b.txt");
 		// 创建写入流
 		OutputStream out = s.getOutputStream();
 
 		// 自定义缓冲区
-		byte[] buf = new byte[1024];
+		byte[] ch = new byte[1024];
 
 		int len = 0;
-		while ((len = input.read(buf)) != -1) {
-			out.write(buf, 0, len);
+		while ((len = in.read(ch)) != -1) {
+			out.write(ch, 0, len);
 		}
 		// 关闭输出流对象
 		s.shutdownOutput();
@@ -905,7 +905,7 @@ public class Client {
 		BufferedReader bufs = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		System.out.println(new String(bufs.readLine()));
 
-		input.close();
+		in.close();
 		s.close();
 
 	}
@@ -931,9 +931,17 @@ socket server client
 			// 把客户端上传的文件写入到服务器中
 			out.write(ch, 0, len);
 		}
-		
+		挖雷达（下方的土块），（这时旁边浓）烟（升起），绿（色的），（来自一堆）鸡屎。（烟阻挡了视线），（于是亮起）白灯（照明），（发现身旁还有一堆）火药。（这时一只海）鸥（从空中扔下一颗手）雷，（意图引爆火药），江志灵（眼疾手快），（用手挎）篮（子接住了手雷）
 		s.getOutputStream().write("上传成功！".getBytes());
-		
-	Client Socket InputStream OutputStream byte[] int len while s.shutdownOutput() BufferedReader bufs.readLine() input.close() s.close()
-	
+		烧（一个）胶（袋装着的）牛屎，（散发浓烟），（用来解救被）绿（色的）蛇（缠住的）狗，（没想到狗被解救了），（蛇跑到自己）脚背（上来了）
+	Client Socket InputStream OutputStream byte[] (int len) while s.shutdownOutput() BufferedReader bufs.readLine() in.close() s.close()
+	卡（车用绳子在车尾后）拉（着）（一个）人，（那人拆）手机（的）电池（出来），咬（了一口），（电池燃）烧（起来），（烧烂了绳子），（然后）拔左（手出来）。（那人看见路边有个）鱼鳞蛙，（想捉来补补身子），（但）石山（上有一只）大鸭（也在虎视眈眈），（于是）（飞一块）玻璃（过去攻击鸭子），（鸭子吓得躲进栽满）白莲（花）（的围栏里）。（最后那人叫一只）燕子（空投一个西）瓜（去砸蛙）
+		Socket s = new Socket("127.0.0.1", 8888);
+		（一只）新奇士（橙在）狗嘴（里）（叼着），阿婆（用一只地球仪的）地球（换了过来）
+		InputStream in = new FileInputStream("F:\\b.txt");
+		电池（抹上一点）盐，（一）扭，（着）火（了），（点燃）烟丝，（站在）路肩（上慢慢抽）
+		OutputStream out = s.getOutputStream();
+		牛屎（被一只）鸭（子）（踩中），（鸭子立刻去）洗脚，（前后过程）（被）亚视（报道）
+		BufferedReader bufs = new BufferedReader(new InputStreamReader(s.getInputStream()));
+		玻璃杯（被一只）曱甴（爬脏了），扭（干一块）以色列（国旗去擦干净玻璃杯），（接着用）匙羹（舀）盐水（进玻璃杯）
 -----------------------------------------------------------------
