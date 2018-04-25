@@ -838,3 +838,101 @@ Activiti createTable deployFlow startFlow findPersonalTask completeTask
 	completeTask processEngine.getTaskService().complete(taskId)
 	妗（弹着）（吉）他，（手里摇着）菠萝叶，脚（下）弹（着）瑟，（震得旁边的）琴破裂，（音波）烫耳朵
 -----------------------------------------------------------------
+
+socket文件传输
+
+public class Server {
+
+	public static void main(String[] args) throws Exception {
+		// 创建服务端，并指定监听端口号
+		ServerSocket ss = new ServerSocket(8888);
+
+		// 获取客户端
+		Socket s = ss.accept();
+
+		// 获取客户端Ip
+		String ip = s.getInetAddress().getHostAddress();
+		System.out.println(ip + "...连接成功！");
+
+		// 得到客户端网络流(字节流文件)
+		InputStream in = s.getInputStream();
+
+		// 创建服务器端的写入流对象
+		OutputStream out = new FileOutputStream("F:\\a.txt");
+
+		// 定义缓冲区
+		byte[] ch = new byte[1024];
+		int len = 0;
+		while ((len = in.read(ch)) != -1) {
+			// 把客户端上传的文件写入到服务器中
+			out.write(ch, 0, len);
+		}
+
+		// 返回给客户端的信息
+		OutputStream outSoc = s.getOutputStream();
+
+		outSoc.write("上传成功！".getBytes());
+
+		out.close();
+		s.close();
+		ss.close();
+
+	}
+
+}
+
+public class Client {
+
+	public static void main(String[] args) throws Exception {
+		// 创建客户端
+		Socket s = new Socket("127.0.0.1", 8888);
+
+		// 创建要上传的文件对象
+		InputStream input = new FileInputStream("F:\\b.txt");
+		// 创建写入流
+		OutputStream out = s.getOutputStream();
+
+		// 自定义缓冲区
+		byte[] buf = new byte[1024];
+
+		int len = 0;
+		while ((len = input.read(buf)) != -1) {
+			out.write(buf, 0, len);
+		}
+		// 关闭输出流对象
+		s.shutdownOutput();
+
+		BufferedReader bufs = new BufferedReader(new InputStreamReader(s.getInputStream()));
+		System.out.println(new String(bufs.readLine()));
+
+		input.close();
+		s.close();
+
+	}
+
+}
+-----------------------------------------------------------------
+socket server client
+淑娟（穿着）丝袜，（从）卡（车驾驶室一把）拉（了一个）人（下来）
+	Server ServerSocket Socket (InputStream in) (OutputStream out) byte[] (int len) while s.getOutputStream() out.close() s.close() ss.close()
+	丝袜（被）书生锁柜（子里），（接着开始把）烟丝（揉成）丸（子），（突然一只）（海）鸥（从空中拉了一泡）屎（落进准备装丸子的）瓯（里），（书生）拔狙（击枪出来），（用一块）鱼鳞（做子弹），（准备射杀海鸥），（却又有一只）蛙（跳过来干扰了他），（书生用）匙羹（清理眼角的）眼屎，（应该来自于蛙），（由于眼屎过于恶心），（书生）呕（橄榄）水，（呕进装着）沙石（的）罐（子里）
+		ServerSocket ss = new ServerSocket(8888);
+		
+		Socket s = ss.accept();
+		
+		InputStream in = s.getInputStream();
+		
+		OutputStream out = new FileOutputStream("F:\\a.txt");
+		
+		byte[] ch = new byte[1024];
+		
+		while ((len = in.read(ch)) != -1) {
+			// 把客户端上传的文件写入到服务器中
+			out.write(ch, 0, len);
+		}
+		
+		s.getOutputStream().write("上传成功！".getBytes());
+		
+	Client Socket InputStream OutputStream byte[] int len while s.shutdownOutput() BufferedReader bufs.readLine() input.close() s.close()
+	
+-----------------------------------------------------------------
