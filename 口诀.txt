@@ -917,15 +917,16 @@ socket server client
 	Server ServerSocket Socket (InputStream in) (OutputStream out) byte[] (int len) while s.getOutputStream() out.close() s.close() ss.close()
 	丝袜（被）书生锁柜（子里），（接着开始把）烟丝（揉成）丸（子），（突然一只）（海）鸥（从空中拉了一泡）屎（落进准备装丸子的）瓯（里），（书生）拔狙（击枪出来），（用一块）鱼鳞（做子弹），（准备射杀海鸥），（却又有一只）蛙（跳过来干扰了他），（书生用）匙羹（清理眼角的）眼屎，（应该来自于蛙），（由于眼屎过于恶心），（书生）呕（橄榄）水，（呕进装着）沙石（的）罐（子里）
 		ServerSocket ss = new ServerSocket(8888);
-		
+		书生（发现）水（中有一条）蛇，（于是从）信（封里往水里倒一些）水虱（吸引蛇过来），（接着用）电（流）（对着）（蛇）口（电了一下）
 		Socket s = ss.accept();
-		
+		锁柜，（柜子里有一条尸体），尸水（流出来），（吸引）盎（里的）蛇（出来）
 		InputStream in = s.getInputStream();
-		
+		烟丝（中下了一些）盐，（用）匙羹（去搅拌），（同时）（下了）（一）鱼鳔（的）细菌
 		OutputStream out = new FileOutputStream("F:\\a.txt");
-		
+		（海）鸥（的）屎（落在）瓯（里），（将）信（纸）（用）火（烧着放进瓯里），（再下一些）澳雪，（接着用）芦（荟）茎（擦干净瓯）
 		byte[] ch = new byte[1024];
-		
+		ch应该是cache的缩写
+		白粥（落进一坨）鸡屎，（狮子王）辛巴（立马扔了一个）哑铃（去驱赶鸡），（最后哑铃落在）鱼池（里）
 		while ((len = in.read(ch)) != -1) {
 			// 把客户端上传的文件写入到服务器中
 			out.write(ch, 0, len);
