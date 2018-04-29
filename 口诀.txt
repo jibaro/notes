@@ -1007,5 +1007,5 @@ TreeSet Comparable Comparator
 			int num3 = num2 == 0 ? this.age - s.age : num2;
 
 	Comparator TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() { public int compare(Student s1, Student s2) {} })
-	
+	蠄（蜍）头刺手，（放进）果汁（里），扭（一下旋钮），（开启了）空调，（准备喝果汁叹冷气），（没想到这空调喷出）火（和）烟，（于是立马）kʌm被（盖住空调），（用扇子把烟扇出去），（然而）（这）扇（子）（也带着）油盐
 -----------------------------------------------------------------
