@@ -995,5 +995,7 @@ public class TreeSetDemo {
     }  
 }
 -----------------------------------------------------------------
+Student implements Comparable<Student> { public int compareTo(Student s) {} }
 
+TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() { public int compare(Student s1, Student s2) {} })
 -----------------------------------------------------------------
