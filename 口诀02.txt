@@ -41,5 +41,5 @@ private void method(Thread thread) {
 }
 -----------------------------------------------------------------
 Lock lock = new ReentrantLock(); method lock.lock(); try catch finally lock.unlock(); if (lock.tryLock())
-
+骑着鹿的女子，被一群绿鹌鹑挡了路，
 -----------------------------------------------------------------
