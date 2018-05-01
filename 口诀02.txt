@@ -43,3 +43,25 @@ private void method(Thread thread) {
 Lock lock = new ReentrantLock(); method lock.lock(); try catch finally lock.unlock(); if (lock.tryLock())
 骑（着）鹿（的）女（子），（被一群）绿（色）鹌鹑（挡了）路，（拿着）花（的）落落（用手中的花引开了他们），（突然），（落落的）左脚（中了）火弩（的箭），（落落）按（下手）雷，（准备还击），（这时），一菲（从山坡上滚下）车碌
 -----------------------------------------------------------------
+
+在ThreadPoolExecutor类中提供了四个构造方法：
+public class ThreadPoolExecutor extends AbstractExecutorService {
+    .....
+    public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
+            BlockingQueue<Runnable> workQueue);
+ 
+    public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
+            BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory);
+ 
+    public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
+            BlockingQueue<Runnable> workQueue,RejectedExecutionHandler handler);
+ 
+    public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
+        BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory,RejectedExecutionHandler handler);
+    ...
+}
+从上面的代码可以得知，ThreadPoolExecutor继承了AbstractExecutorService类，并提供了四个构造器，事实上，通过观察每个构造器的源码具体实现，发现前面三个构造器都是调用的第四个构造器进行的初始化工作。
+-----------------------------------------------------------------
+以下为对第四个构造器的记忆
+石榴铺，（铺口前摆放着一只）电子狗，（有顾客光临），（是）（叼着）烟（的）郭富城，（他的）袜（子）（镶嵌着）宝石，（跟随着他的）狼，（嘴里叼着）企鹅头。（郭富城找了一张台坐了下来），台油（腻）（带）泥，（郭富城一拨），（桌子上的一些）玻璃（飞到了旁边）（吴）奇隆（的身上），（吴奇隆生气得）撕烂（了）（郭富城的）裤（子），（拿着）绿遮（做武器的）（谭）耀汉（立马上前制止）
+-----------------------------------------------------------------
