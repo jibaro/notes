@@ -65,3 +65,59 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
 以下为对第四个构造器的记忆
 石榴铺，（铺口前摆放着一只）电子狗，（有顾客光临），（是）（叼着）烟（的）郭富城，（他的）袜（子）（镶嵌着）宝石，（跟随着他的）狼，（嘴里叼着）企鹅头。（郭富城找了一张台坐了下来），台油（腻）（带）泥，（郭富城一拨），（桌子上的一些）玻璃（飞到了旁边）（吴）奇隆（的身上），（吴奇隆生气得）撕烂（了）（郭富城的）裤（子），（拿着）绿遮（做武器的）（谭）耀汉（立马上前制止）
 -----------------------------------------------------------------
+
+Callable
+
+1:
+FutureTask<Integer> future = new FutureTask<Integer>(callable);
+new Thread(future).start();
+future.get();
+
+2:
+ExecutorService threadPool = Executors.newSingleThreadExecutor();
+Future<Integer> future = threadPool.submit(new Callable<Integer>() {
+	public Integer call() throws Exception {
+		return new Random().nextInt(100);
+	}
+});
+future.get();
+
+3:
+ExecutorService threadPool = Executors.newCachedThreadPool();
+CompletionService<Integer> cs = new ExecutorCompletionService<Integer>(threadPool);
+for(int i = 1; i < 5; i++) {
+	final int taskID = i;
+	cs.submit(new Callable<Integer>() {
+		public Integer call() throws Exception {
+			return taskID;
+		}
+	});
+}
+// 可能做一些事情
+for(int i = 1; i < 5; i++) {
+	try {
+		System.out.println(cs.take().get());
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	} catch (ExecutionException e) {
+		e.printStackTrace();
+	}
+}
+
+4:
+ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 200, TimeUnit.MILLISECONDS,
+                 new ArrayBlockingQueue<Runnable>(5));
+executor.execute(myTask);
+executor.shutdown();
+
+5:
+Callable<Integer> callable = new Callable<Integer>() {
+	public Integer call() throws Exception {
+		return new Random().nextInt(100);
+	}
+};
+-----------------------------------------------------------------
+Callable FutureTask ExecutorService CompletionService ThreadPoolExecutor Callable
+
+	
+-----------------------------------------------------------------
