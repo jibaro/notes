@@ -118,6 +118,9 @@ Callable<Integer> callable = new Callable<Integer>() {
 };
 -----------------------------------------------------------------
 Callable FutureTask ExecutorService CompletionService ThreadPoolExecutor Callable
-
-	
+烤炉（上烤着面）包，（还有）肥猪头，医生（居然）（把）蠄蜍（也放上去），石兰（则）铺鱼（在炉上烤），（还把）可乐（倒进）煲（里），（放上炉煲）
+	FutureTask<Integer> future = new FutureTask<Integer>(callable);
+	new Thread(future).start();
+	future.get();
+	在肥猪头上撒上火药，从狗嘴中接过咖喱煲，然后倒咖喱在猪身上，再撒一些生蒜。最后划着火柴，烧猪的蛋蛋点燃整只猪，一会儿猪熟了，撕一只肥猪脚来吃
 -----------------------------------------------------------------
