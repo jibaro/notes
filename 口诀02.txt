@@ -123,4 +123,5 @@ Callable FutureTask ExecutorService CompletionService ThreadPoolExecutor Callabl
 	new Thread(future).start();
 	future.get();
 	（在有着）肥猪头（的肥猪）（身上撒满）火药，（从）狗嘴（中接过）咖喱煲，（然后倒咖喱在猪身上），（再撒一些）生蒜。（最后划着）火柴，烧（猪的）蛋（蛋）（从而点燃整只猪），（一会儿猪熟了），（撕一只）肥猪脚（来吃）
+	ExecutorService 
 -----------------------------------------------------------------
