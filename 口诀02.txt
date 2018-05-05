@@ -130,5 +130,6 @@ Callable FutureTask ExecutorService CompletionService ThreadPoolExecutor Callabl
 		}
 	});
 	future.get();
+	医生（坐）的士（到）桥头，（在车上拉了一坨）屎，（扔到车窗外的）牛屎（堆里），（有人用）水瓢（把屎弄到）书包（里），（里面有）泥，（外面再用）海报（包着）
 	
 -----------------------------------------------------------------
