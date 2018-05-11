@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.2.16/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="myAppCtrl">
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+            </tr>
+            <!--写法1-->
+            <tr ng-repeat="friend in friends |myfilter">
+            <!--写法2-->
+<!--<tr ng-repeat="friend  in newArr=(friends | myfilter)">-->
+                <td>{{friend.name}}</td>
+                <td>{{friend.phone}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script type="text/javascript">
+
+    var app = angular.module("myApp", []);
+
+    app.controller("myAppCtrl", ["$scope", function ($scope) {
+        $scope.friends = [{name: 'John', phone: '44555-1276'},
+            {name: 'Annie', phone: '800-BIG-MARY'},
+            {name: 'Mike', phone: '11555-4321'},
+            {name: 'Adam', phone: '33555-5678'},
+            {name: 'David', phone: '387555-8765'},
+            {name: 'Mikay', phone: '555-5678'}];
+    }]);
+
+    app.filter("myfilter", function () {
+        return function (input) {
+            var output = [];
+            angular.forEach(input, function (value, key) {
+                console.log("value==" + JSON.stringify(value));
+                console.log("value.phone类型==" + typeof (value.phone));
+                console.log("value.phone.indexOf==" + value.phone.indexOf("555"));
+                /*js中没有contains方法，使用indexOf来判断字符串是否包含*/
+                /*indexOf字符串出现的位置，没有则返回-1*/
+                //方法一：
+                if (value.phone.indexOf("555") >= 0) {
+                    output.push(value);
+                }
+                //方法二：
+//                if (value.phone.indexOf("555") !== -1) {
+//                    output.push(value);
+//                }
+            });
+            return output;
+        }
+    });
+</script>
+</body>
+</html>
