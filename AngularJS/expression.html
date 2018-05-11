@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Hello Angular</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.3.13/angular.min.js"></script>
+    <style type="text/css">
+        #main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div ng-app="MyApp">
+		<div ng-controller="MyController">
+			<h1>{{ParsedValue}}</h1>
+		</div>
+	</div>
+	<script>
+		angular.module("MyApp",[])
+		.controller("MyController", function($scope, $parse){
+			var context = {
+				name: "dreamapple"
+			};
+			// 因为这个解析的语句中含有我们想要解析的表达式，
+			// 所以要把不相关的用引号引起来，整体然后用+连接
+			var expression = "'Hello ' + name";
+			var parseFunc = $parse(expression);
+			$scope.ParsedValue = parseFunc(context);
+		});
+	</script>
+</body>
+</html>
