@@ -1,0 +1,4 @@
+hibernate反向生成Javabean
+Junit单元测试——配合一系列的xml等配置文件，测试service
+PowerDesigner连接数据库？以及，建表后插入到数据库等等
+把自己的synframe-practiceXbt运行起来。话说路径、父子模块关系等等到底是怎么回事？
