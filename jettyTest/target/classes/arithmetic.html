@@ -1,0 +1,77 @@
+<html ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript"
+	src="http://apps.bdimg.com/libs/angular.js/1.3.13/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="MyController">
+		<p>
+		<h2>问题：{{ add1 }} + {{ add2 }} = ?</h2>
+		</p>
+
+		<p>
+		<h2 style="display: inline;">你的答案：</h2>
+		<input type="text" ng-model="answer" placeholder="请输入你的答案" />
+		<button ng-click="submitAnswer()">提交答案</button>
+		<button ng-click="nextQuit()">这题我不会，下一题</button>
+		</p>
+
+		<p><h2>{{ result }}</h2></p>
+	</div>
+	<script>
+		var app = angular.module("myApp", []);
+		app.config([ '$locationProvider', function($locationProvider) {
+			// $locationProvider.html5Mode(true);  
+			$locationProvider.html5Mode({
+				enabled : true,
+				requireBase : false
+			});
+		} ]);
+		app.config(["$httpProvider", function ($httpProvider) {
+		    //更改 Content-Type
+		    $httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded;charset=utf-8";
+		    $httpProvider.defaults.headers.post["Accept"] = "*/*";
+		    $httpProvider.defaults.transformRequest = function (data) {
+		        //把JSON数据转换成字符串形式
+		        if (data !== undefined) {
+// 		            return $.param(data);
+					data = angular.toJson(data);
+		        }
+		        return data;
+		    };
+		}])
+		app.controller("MyController", function($scope, $location, $http) {
+			$scope.add1 = $location.search().add[0];
+			$scope.add2 = $location.search().add[1];
+
+			$scope.nextQuit = function() {
+				window.location.href = "/quit";
+			}
+
+			$scope.submitAnswer = function() {
+				$http({
+					method : 'post',
+					url : '/checkAnswer',
+
+					data : {
+						add1 : $scope.add1,
+						add2 : $scope.add2,
+						answer : $scope.answer
+					}
+
+				}).success(function(data, status, headers, config) {
+
+					$scope.result = data;
+
+				}).error(function(data, status, headers, config) {
+
+					console.error('系统错误');
+
+				});
+			}
+		});
+	</script>
+</body>
+</html>
