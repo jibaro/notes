@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="homeCtrl">
+		<h2>page1</h2>
+		<form ng-submit="addInput()">
+			<input type="text" ng-model="input.name" placeholder="输入员工姓名">
+			<input type="number" ng-model="input.age" placeholder="输入员工年龄">
+			<input type="text" ng-model="input.title" placeholder="输入员工职位">
+			<input type="submit" value="add">
+		</form>
+	</div>
+	<br />
+	<div ng-controller="mineCtrl">
+		<h2>page2</h2>
+		<ul>
+			<li ng-repeat="p in persons.list">{{p.name}}, {{p.age}}, {{p.title}}</li>
+		</ul>
+	</div>
+<!-- 	<script type="text/javascript" src="../lib/angular.min.js"></script> -->
+<!-- 	<script type="text/javascript" src="../lib/angular-css.js"></script> -->
+<!-- 	<script type="text/javascript" src="../lib/angular-ui-router.js"></script> -->
+	<script src="https://cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+	<script src="https://cdn.bootcss.com/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.js"></script>
+	<script>
+		angular.module('myApp', [ 'ui.router' ]) //定义控制器 
+		.controller('homeCtrl',
+				[ "$scope", "testFactory", function($scope, testFactory) { //代码规范，设置初始状态 
+					$scope.input = {
+						name : '',
+						age : null,
+						title : ''
+					}; //接收表单传递的参数
+					$scope.addInput = function() { //把获取到的参数传递到仓库中setter存储起来 
+						testFactory.setter($scope.input); //存储之后把input清空，防止关联存储的数据 
+						$scope.input = {
+							name : '',
+							age : null,
+							title : ''
+						};
+					};
+				} ]) //定义控制器 
+		.controller('mineCtrl',
+				[ "$scope", "testFactory", function($scope, testFactory) { //获取设置页面设置的数据 
+					$scope.persons = testFactory.getter();
+				} ]) //定义仓库 
+		.factory('testFactory', function() { //定义参数对象
+			var testObject = {}; //用数据保存数据
+			testObject.list = []; //定义传递数据的setter函数，用来接收数据
+			var _setter = function(data) {
+				testObject.list.push(data);
+			}; //定义获取数据的getter函数
+			var _getter = function() {
+				return testObject;
+			}; // 在controller中通过调setter()和getter()方法可实现提交或获取参数的功能 
+			return {
+				setter : _setter,
+				getter : _getter
+			}
+		});
+	</script>
+</body>
+</html>

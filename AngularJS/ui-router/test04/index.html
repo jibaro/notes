@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+<script src="https://unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+<style type="text/css">
+.active {
+	color: red;
+	font-size: 30px;
+}
+</style>
+</head>
+<body ng-app='app' ng-controller='controller'>
+	<a ui-sref='page1' href='' ng-click='change(1)' ng-class='{"active":num == 1}'>页面1</a>
+	<!-- //ui-sref进行状态的跳转，点击后触发page1的状态，状态触发后才会执行控制器函数； -->
+	<a ui-sref='page2' ng-click='change(2)' ng-class='{"active":num == 2}'>页面2</a>
+	<a ui-sref='page3' ng-click='change(3)' ng-class='{"active":num == 3}'>页面3</a>
+	<a ui-sref='page4' ng-click='change(4)' ng-class='{"active":num == 4}'>页面4</a>
+	<a ui-sref='page5' ng-click='change(5)' ng-class='{"active":num == 5}'>页面5</a>
+	<h1 ng-click='goTo()'>go to p5</h1>
+	<h1 ui-view></h1>
+	<!-- //ui-view 状态跳转的页面会在这里展示 -->
+	<h1>index</h1>
+	<script type="text/javascript">
+		var app = angular.module('app', [ 'ui.router' ]); //注入ui.router路由模块
+		app.config(function($stateProvider, $urlRouterProvider) {
+			$urlRouterProvider.when('', '/page1'); //$urlRouterProvider初始化跳转的状态，首先想展示哪一个页面
+			$stateProvider.state('page1', { //定义状态，出发此状态，将会跳转templateurl页面
+				url : '/page1/:id', //：id定义参数；定义方式三种 1./page1/：id/：name 2./page1/{id}/{name}/ 3./page1?id&name 在跳转页面用$stateParams接收
+				templateUrl : "page1.html"
+			}).state('page2', {
+				url : '/page2',
+				templateUrl : "page2.html"
+			}).state('page3', {
+				url : '/page3',
+				templateUrl : "page3.html"
+			}).state('page4', {
+				url : '/page4',
+				templateUrl : "page4.html"
+			}).state('page5', {
+				url : '/page5/{id}/{name}',
+				templateUrl : "page5.html",
+				controller : function($stateParams) {
+					alert($stateParams.id);
+				} //这里可以写控制器函数。
+			});
+
+		});
+		app.controller('controller', function($stateParams, $scope, $state) {
+			console.log($stateParams);
+			$scope.change = function(num) {
+				$scope.num = num;
+			};
+			$scope.goTo = function() {
+				$state.go('page5', {
+					id : 10,
+					name : 'wang'
+				}); //$state.go()跳转触发某一状态，并传入一个对象；           
+			}
+		});
+		app.controller('page1', function($stateParams) {
+			console.log($stateParams); // 这里将接受到传入的参数对象
+		});
+		app.controller('page2', function($stateParams) {
+			console.log($stateParams);
+		});
+		app.controller('page3', function($stateParams) {
+			console.log($stateParams);
+		});
+		app.controller('page4', function($stateParams) {
+			console.log($stateParams);
+		});
+		app.controller('page5', function($stateParams) {
+			console.log($stateParams);
+		});
+	</script>
+</body>
+</html>
