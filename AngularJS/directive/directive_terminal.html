@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.3.13/angular.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8" />
+<title>Hello Angular</title>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtr">
+<!--此处在div上使用了两个自定义指令，作为属性存在，但directiveOne优先级高，而且设置了terminal属性，所以directiveSec指令并不会执行-->
+   <div directive-Sec directive-One>
+    这是自定义指令
+   </div>    
+</div>
+<script>
+	var myCtr=["$scope",function($scope){}]
+	var app=angular.module("myApp",[]);
+	app.controller("myCtr",myCtr);
+	app.directive("directiveOne",function(){
+	return {
+		restrict: "ECMA", 
+		priority: 2, 
+		terminal: true, 
+		template:function(tElement, tAttrs){
+			tElement[0].style.fontSize="18px"; //设置字体
+		}
+	}
+	});
+	app.directive("directiveSec",function(){
+	return {
+		restrict: "ECMA", 
+		priority: 1, 
+		template:function(tElement, tAttrs){
+			tElement[0].style.color="red"; //设置颜色
+		}
+	}
+	});
+</script>
+</body>
+</html>

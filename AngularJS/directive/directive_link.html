@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.3.13/angular.min.js"></script>
+    <script src=""></script>
+    <title></title>
+    <script language="JavaScript">
+        angular.module('docsTimeDirective', [])
+                .controller('Controller', ['$scope', function($scope) {
+                    $scope.format = 'M/d/yy h:mm:ss a';
+                }])
+                .directive('myClock', ['$interval', '$filter', '$log', function($interval, $filter,$log) {
+                    return {
+                        link: function(scope, element, attrs) {
+                            var interFormat, timeoutId;
+
+                            function updateTime() {
+                                element.text($filter('date')(new Date(), interFormat));
+                            }
+
+                            scope.$watch(attrs.myFormat, function(value) {
+                                interFormat = value;
+                                updateTime();
+                            });
+
+                            element.on('$destroy', function() {
+                                $interval.cancel(timeoutId);
+                            });
+
+                            timeoutId = $interval(function() {
+                                updateTime();
+                            }, 1000);
+                        }
+                    };
+                }]);
+    </script>
+</head>
+<body ng-app="docsTimeDirective">
+<div ng-controller="Controller">
+    时间格式: <input ng-model="format"> <hr/>
+    Current time is: <span my-clock my-format="format"></span>
+</div>
+</body>
+</html>
