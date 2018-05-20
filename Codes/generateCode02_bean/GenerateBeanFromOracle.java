@@ -17,9 +17,15 @@ public class GenerateBeanFromOracle {
 	
 	String generatedFilePath = "C:\\Users\\Administrator\\Desktop\\generatedFile.java";
 	
+	String user = "tester";
+	
+	String password = "tester";
+	
+	String url = "jdbc:oracle:thin:@127.0.0.1:1521:test";
+	
 	public void generateCodes() throws Exception {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:test", "tester", "tester");
+		Connection con = DriverManager.getConnection(url, user, password);
 		// String sql = "select * from users";
 		String sql = "SELECT t1.COLUMN_NAME, t1.DATA_TYPE, t2.COMMENTS FROM user_tab_columns t1, user_col_comments t2 WHERE t1.TABLE_NAME = '" + tableName + "' AND t1.TABLE_NAME = t2.TABLE_NAME AND t1.COLUMN_NAME = t2.COLUMN_NAME";
 		PreparedStatement stat = con.prepareStatement(sql);
@@ -35,6 +41,9 @@ public class GenerateBeanFromOracle {
 			String javaType = (String) OracleTypeToJavaType.getMapping().get(rs.getString(2));
 			String camel = CamelAndUnderline.underline2Camel(rs.getString(1));
 			String camelDealed = camel.substring(0, 1).toLowerCase() + camel.substring(1); // 使首字母小写
+			bw.write("/**\n");
+			bw.write(" * " + rs.getString(3) + "\n");
+			bw.write(" */\n");
 			bw.write("private " + javaType + " " + camelDealed + ";\n");
 			bw.write("\n");
 			getterAndSetter.append("public void set" + camel + "(" + javaType + " " + camelDealed + ") {\n");
