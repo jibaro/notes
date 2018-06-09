@@ -1,0 +1,16 @@
+SQL中，下划线字段名后，添加as和驼峰形式的字段名
+before：
+cvt.someone_like_you as someone_like_you , cvt.nice_to_meet_you as nice_to_meet_you, cvt.some_body as some_body, cvt.come_w as come_w, cvt.hello
+
+after：
+cvt.someone_like_you as someoneLikeYou , cvt.nice_to_meet_you as niceToMeetYou, cvt.some_body as someBody, cvt.come_w as comeW, cvt.hello
+
+Notepad++操作步骤
+step1：
+查找目标	(\.)(\w+_\w+)
+替换为		\1\2 as \2
+
+step2：
+查找目标	(as\s+\w+?(?=_))(_)(\w)(\w*)
+替换为		\1\U\3\E\4
+此步要执行好几次，直至结果完全出现
