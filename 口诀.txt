@@ -643,11 +643,11 @@ shiro demo
 			model U Permission Role RolePermission User UserRole
 			
 		core config freemarker mybatis shiro statics tags
-		哥（斯拉）扛（着肥料跑了），（追出来的有）火（麒）麟，（它隐私部位打着）马（赛）克，（还有）猫，（猫身上背着）铁支。（他们向哥斯拉）（发）射（了）（一只）锣（并击中），（哥斯拉被气得）撕大衣，踢（飞）（一坨）狗屎（作为还击）
+		哥（斯拉）扛（着肥料跑了），（追出来的有）火（麒）麟，（它隐私部位打着）马（赛）克，（还有）猫，（猫身上）背（着）铁支。（他们向哥斯拉）（发）射（了）（一只）锣（并击中），（哥斯拉被气得）撕大衣，踢（飞）（一坨）狗屎（作为还击）
 			shiro cache filter listener service session token CustomShiroSessionDAO（CSSD）
 			食肉（中的）盖茨（坐在）（一辆）飞度（FIT）（里面），（开车的是）李晨，（李晨被一块突如其来的）蛇皮（吓到），（车子撞上）石山，（附近）踢球（的一群小孩赶过来），（从车子里）扛（出）尸（体）（到）沙（子）（堆成的）岛（上）
 				cache impl JedisManager JedisShiroCache JedisShiroSessionRepository ShiroCacheManager VCache
-				盖茨（用）归参（喂）蚱蜢；谢诗琪（则用）（嵌有）结石（的）雪梨（和）沙琪玛喂狗
+				盖茨（用）沙（和着）盐（喂）蚱蜢；谢诗琪（则用）（嵌有）结石（的）雪梨（和）沙琪玛喂狗
 					impl CustomShiroCacheManager JedisShiroCacheManager
 					（用）（一块）归参（引诱）蠄蜍（下来），（它正）（扛着）旗（站在）门（上），（不料被它用屎袭击），（不过用）遮（挡住了）屎，（打开）（飞）机门，（把伞上的屎抖出去）
 						CustomShiroCacheManager （implements CacheManager, Destroyable） getCache destroy getShiroCacheManager setShiroCacheManager
