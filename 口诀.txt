@@ -649,7 +649,7 @@ shiro demo
 				cache impl JedisManager JedisShiroCache JedisShiroSessionRepository ShiroCacheManager VCache
 				盖茨（用）沙（和着）盐（喂）蚱蜢；谢诗琪（则用）（嵌有）结石（的）雪梨（和）沙琪玛喂狗
 					impl CustomShiroCacheManager JedisShiroCacheManager
-					（用）（一块）归参（引诱）蠄蜍（下来），（它正）（扛着）旗（站在）门（上），（不料被它用屎袭击），（不过用）遮（挡住了）屎，（打开）（飞）机门，（把伞上的屎抖出去）
+					（撒）沙（和）盐（企图赶）蠄蜍（下来），（它正）（扛着）旗（站在）门（上），（不料被它用屎袭击），（不过用）遮（挡住了）屎，（打开）（飞）机门，（把伞上的屎抖出去）
 						CustomShiroCacheManager （implements CacheManager, Destroyable） getCache destroy getShiroCacheManager setShiroCacheManager
 						蠄蜍（去）开门，（原来是）（王）嘉文（来了），（他带来了）豆浆，（用）煲（装着），姜（插着）旗（子）（浮在上面），（还有）大枣。（突然），（一块）（沾有）狗屎（的）沙琪玛（掉进煲里）
 						JedisShiroCacheManager （implements ShiroCacheManager） getCache destroy getJedisManager setJedisManager
