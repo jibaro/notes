@@ -665,7 +665,7 @@ shiro demo
 					VCache （JedisManager J） get set setex getVByMap setVByMap delByMapKey getVByList getLenBySet delSetByKey srandmember setVBySet getSetByKey setVByList getVByList getLenByList delByKey exists returnResource
 					
 				filter KickoutSession Login Permission Role ShiroFilterUtils SimpleAuth
-				（一辆）飞度（在行驶路上遇到一只）企鹅，（它嘴里叼着）蛇，（手持）锣（作为盾牌，并且锣上有）镜（面），（它抛洒混和了）泡沫（的甲）醇 （在）（公）路（上），（车子受滑，撞向一块大）石（并）飞（出公路，扎进河里）游（了起来），（河里有一群）星脯（胸牌有星星的）鹅
+				（一辆）飞度（在行驶路上遇到一只）企鹅，（它嘴里叼着）蛇，（手持）锣（作为盾牌，并且锣上有）镜（面），（它抛洒混和了）泡沫（的甲）醇 （在）（公）路（上），（车子受滑，撞向一块大）石（并）飞（出公路，扎进河里）游（了起来），（河里有一群）星脯（胸脯有星星的）鹅
 				listener CustomSessionListener
 				李晨（用）卡（车）（拉着）雪梨
 				service ShiroManagerImpl ShiroManager
