@@ -686,7 +686,7 @@ shiro demo
 					TokenManager SampleRealm customSessionManager getToken getSession getNickname getUserId getYZM getVal2Session setVal2Session login logout isLogin clearNowUserAuth clearUserAuthByUserId clearUserAuthByUserId
 					兔（子）（在）门（上不肯下来），（于是）（开着）三菱（去撞），（撞得一团糟），（一群）蠄蜍（跳了出来），（还追逐着）蚊，（驾驶员的）脚（陷进）桶（里），（桶里满是）沙（和）泥，（脚拔不出来），（唯有从）油盎（倒些）油芝麻（进去润滑一下才能拔出来）。（旁边的）萝（筐）（冒）烟，（海）鸥（四散）。（这时房子主人）袁驰道（劳作回来了），扛（着）犁，扭（着）腰，（赶着）鹅，（还背着）鱿（鱼）（和）鳄（鱼），（身边的）白羊（追逐着）鸭（子）
 					SampleRealm （extends AuthorizingRealm） （userService permissionService roleService 我认为这三个service不用记） doGetAuthenticationInfo doGetAuthorizationInfo clearCachedAuthorizationInfo clearCachedAuthorizationInfo
-					三菱（在行驶途中遇到一只）鹅（阻挡），（响）铃（也赶不走）。（唯有用）大疆（取些）荷（叶）用（箱）子（装着）（再点起）烟，（鹅被熏到）呕（吐），（跑去一旁）食鱼（了）。（搞定后），（往）锦鲤旗（方向前进），（旗子上空有）（海）鸥（和）燕（子）（盘旋）
+					三菱（在行驶途中遇到一只）鹅（阻挡），（响）铃（也赶不走）。（唯有用）大疆（取些）荷（叶）（用）箱（子）（装着）（再点起）烟，（鹅被熏到）呕（吐），（跑去一旁）食鱼（了）。（搞定后），（往）锦鲤旗（方向前进），（旗子上空有）（海）鸥（和）燕（子）（盘旋）
 					ShiroToken （extends UsernamePasswordToken） 构造 super pswd getPswd setPswd
 					鼠兔（争抢一块）归参，（鼠争不过），（用）Ubuntu（呼唤）狗走（过来）烧炮，（最后兔被吓走），（为了报答狗），（鼠给了狗）鸡肾，（鸡肾上面浇了）（蜂）蜜（芝）麻
 				CustomShiroSessionDAO （extends AbstractSessionDAO） shiroSessionRepository getShiroSessionRepository setShiroSessionRepository update delete getActiveSessions doCreate doReadSession
