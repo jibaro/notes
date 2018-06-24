@@ -704,15 +704,15 @@ shiro demo
 		spring-cache.xml jedisPoolConfig jedisPool
 		
 		spring-mvc.xml <context:component-scan> <mvc:annotation-driven> <mvc:resources> <bean>
-		
+		按（好）袜子，（衣物整理妥当），（下）矿（了），（发现了）金，（偷偷用）匙羹（舀进）盎（里），（又用）银（色）钻（头），（破坏了）压力表，（造成混乱，掩人耳目）
 			<context:component-scan> controller tag
-			
+			矿（里发现一条）金匙羹（嵌在地上），扛锄头（掘出来）
 			<mvc:resources> /images /demo /css /js mapping /** location /
-			
+			压力杆（撑起壁橱的门），（门上又一幅）图，（图上撒着一撮）屌毛，（画的是）cs:source（里）（打）僵尸（的场景）。（从壁橱里取出瓶子）抹瓶，（今天给）金猩猩喂猪肝，（用瓶子装着）
 			<bean> RequestMappingHandlerAdapter FreeMarker Resolver
-				
+			（手戴着）表，（头顶着）绿帽，（有点热），汗液（从额头流下来），（身上穿着）颗粒（表皮的）马甲，（下半身是一条）绿色裤
 				RequestMappingHandlerAdapter messageConverters list MappingJackson2HttpMessageConverter supportedMediaTypes list MediaType
-				
+				（头顶着）绿帽，（有点热），汗液（从额头流下来），（旁边的人帮她抹了）抹头，（用的是一本）历史（书），（她正撑在装着）麦（子的）枕头（上），（做）一字马，（头上还顶着）球，（并且），（旁边的人还向她）撒米，（米用一个）绿色米袋（装着）
 				FreeMarker FreeMarkerConfigExtend XmlEscape
 				
 				Resolver viewResolverFtl FreeMarkerViewResolver viewResolverCommon viewResolver InternalResourceViewResolver CommonsMultipartResolver
