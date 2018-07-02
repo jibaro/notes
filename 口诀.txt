@@ -715,9 +715,10 @@ shiro demo
 				（头顶着）绿帽，（有点热），汗液（从额头流下来），（旁边的人帮她抹了）抹头，（用的是一本）历史（书），（她正撑在装着）麦（子的）枕头（上），（做）一字马，（头上还顶着）球，（并且），（旁边的人还向她）撒米，（米用一个）绿色米袋（装着）
 				FreeMarker FreeMarkerConfigExtend XmlEscape
 				（穿起一身）颗粒（表皮的）马甲，（来驱赶）狐狸（和）马扛（着）盐（前进），（自己拿着）叉（子），（叉子插着）鱼
-				Resolver viewResolverFtl FreeMarkerViewResolver viewResolverCommon viewResolver InternalResourceViewResolver CommonsMultipartResolver
+				Resolver viewResolverFtl FreeMarkerViewResolver viewResolverCommon viewResolver InternalResourceViewResolver CommonsMultipartResolver 简化如下：
+				Resolver FreeMarkerView InternalResourceView CommonsMultipart
 				
-					FreeMarkerViewResolver prefix suffix viewClass order contentType
+					FreeMarkerView prefix suffix viewClass order contentType
 -----------------------------------------------------------------
 
 ehcache
