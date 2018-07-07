@@ -721,6 +721,28 @@ shiro demo
 					FreeMarkerView prefix suffix viewClass order contentType
 					火蚂蟥，（趴在）玻璃花（上），撒粉（赶跑它），（结果它）飘（到一个装着）瓜（的）（篮子里），（并且在上面）吐蛋，（于是手起刀落），砍（掉了它的）头
 		spring-mybatis.xml
+			该文件的层级关系如下：
+			、aop:config
+				、txAdvice
+					、transactionManager
+						、dataSource
+							、log-filter
+
+			、sqlSessionTemplate 、baseMybatisDao 、org.mybatis.spring.mapper.MapperScannerConfigurer
+				、sqlSessionFactory
+					、dataSource
+						、log-filter
+						
+			、context:component-scan
+				、service 、timer
+			记忆树设计如下：
+			spring-mybatis.xml aop:config sqlSessionTemplate context:component-scan
+			麦（子）爆（炸），（毁了）（河）堤，鸭（子）（的）肝（都被炸出来了），（地上插着一把穿过一条）蛇（和一只老）鼠（的）枪。扛（起这枪），金丝（猴走了）。
+				aop:config txAdvice transactionManager dataSource log-filter
+				
+				sqlSessionTemplate baseMybatisDao org.mybatis.spring.mapper.MapperScannerConfigurer sqlSessionFactory dataSource log-filter
+				
+				context:component-scan service timer
 -----------------------------------------------------------------
 
 ehcache
