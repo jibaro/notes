@@ -737,12 +737,15 @@ shiro demo
 				、service 、timer
 			记忆树设计如下：
 			spring-mybatis.xml aop:config sqlSessionTemplate context:component-scan
-			麦（子）爆（炸），（毁了）（河）堤，鸭（子）（的）肝（都被炸出来了），（地上插着一把穿过一条）蛇（和一只老）鼠（的）枪。扛（起这枪），金丝（猴走了）。
+			麦（子）爆（炸），（毁了）（河）堤，鸭（子）（的）肝（都被炸出来了），（地上插着一把穿过一条）蛇（和一只老）鼠（的）枪。（躲在水）缸（里的）金丝（猴）（躲过一劫）
 				aop:config txAdvice transactionManager dataSource log-filter
-				
+				鸭肝（在）铁瓯（里），（桌子上有）茶（和）馒（头），（提着一）袋水（的）路飞（过来沏茶）
 				sqlSessionTemplate baseMybatisDao org.mybatis.spring.mapper.MapperScannerConfigurer sqlSessionFactory dataSource log-filter
-				
+				（地上插着一把穿过一条）蛇（和一只老）鼠（的）枪，（用一把）拔毛刀（把上面的动物毛取下来），（用来）抹水缸，刷沙发，袋鼠（偷偷过来吃枪上面的动物的）脑（和）肺
 				context:component-scan service timer
+				（躲在水）缸（里的）金丝（猴）（穿着）丝袜，（丝袜下）腿毛（清晰可见）
+		spring-shiro.xml
+			
 -----------------------------------------------------------------
 
 ehcache
