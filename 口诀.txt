@@ -745,6 +745,55 @@ shiro demo
 				context:component-scan service timer
 				（躲在水）缸（里的）金丝（猴）（穿着）丝袜，（丝袜下）腿毛（清晰可见）
 		spring-shiro.xml
+			将该文件划分为以下三部分，即采用“折树枝法”
+			CustomShiroSessionDAO
+				jedisShiroSessionRepository sessionIdGenerator
+				
+			customSessionManager
+				jedisShiroSessionRepository customShiroSessionDAO
+				
+			ExecutorServiceSessionValidationScheduler
+				DefaultWebSessionManager
+				
+			DefaultWebSecurityManager
+				sampleRealm
+				DefaultWebSessionManager
+				CookieRememberMeManager
+					rememberMeCookie
+				customShiroCacheManager
+					jedisShiroCacheManager
+						jedisManager
+							jedisPool
+
+			=========================================================================				
+			MethodInvokingFactoryBean
+				DefaultWebSecurityManager
+
+			MethodInvokingFactoryBean
+				jedisShiroSessionRepository
+				
+			DefaultWebSessionManager
+				customShiroSessionDAO
+				customSessionListener
+					jedisShiroSessionRepository
+				ExecutorServiceSessionValidationScheduler
+				sessionIdCookie
+
+			=========================================================================
+			JedisShiroSessionRepository
+				jedisManager
+					jedisPool
+
+			shiroManager ShiroManagerImpl
+
+			ShiroFilterFactoryBean
+				DefaultWebSecurityManager
+				login role simple permission kickout
+				
+			lifecycleBeanPostProcessor
+			
+			=========================================================================
+			spring-shiro.xml CustomShiroSessionDAO MethodInvokingFactoryBean JedisShiroSessionRepository
 			
 -----------------------------------------------------------------
 

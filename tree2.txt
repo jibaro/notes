@@ -16,7 +16,8 @@ DefaultWebSecurityManager
 		jedisShiroCacheManager
 			jedisManager
 				jedisPool
-				
+
+=========================================================================				
 MethodInvokingFactoryBean
 	DefaultWebSecurityManager
 
@@ -30,6 +31,7 @@ DefaultWebSessionManager
 	ExecutorServiceSessionValidationScheduler
 	sessionIdCookie
 
+=========================================================================
 JedisShiroSessionRepository
 	jedisManager
 		jedisPool
