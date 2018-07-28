@@ -751,6 +751,7 @@ shiro demo
 				（躲在水）缸（里的）金丝（猴）（穿着）丝袜，（丝袜下）腿毛（清晰可见）
 		spring-shiro.xml
 			将该文件划分为以下三部分，即采用“折树枝法”
+			Part1:
 			CustomShiroSessionDAO
 				jedisShiroSessionRepository sessionIdGenerator
 				
@@ -770,7 +771,8 @@ shiro demo
 						jedisManager
 							jedisPool
 
-			=========================================================================				
+			=========================================================================
+			Part2:
 			MethodInvokingFactoryBean
 				DefaultWebSecurityManager
 
@@ -785,6 +787,7 @@ shiro demo
 				sessionIdCookie
 
 			=========================================================================
+			Part3:
 			JedisShiroSessionRepository
 				jedisManager
 					jedisPool
@@ -798,8 +801,11 @@ shiro demo
 			lifecycleBeanPostProcessor
 			
 			=========================================================================
+			记忆开始：
 			spring-shiro.xml CustomShiroSessionDAO MethodInvokingFactoryBean JedisShiroSessionRepository
-			
+			尸（体）（躺满）路，蠄蜍（从尸体的）衫袋（跳出来），（朝一堆）鳗鱼粪便（跳去），遮（靠在）树（上），（蠄蜍不小心弄倒了），（触发了）沙（里的）（地）雷
+				CustomShiroSessionDAO customSessionManager ExecutorServiceSessionValidationScheduler DefaultWebSecurityManager
+				蠄蜍（从尸体的）衫袋（跳出来）
 -----------------------------------------------------------------
 
 ehcache
