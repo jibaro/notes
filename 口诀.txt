@@ -807,7 +807,9 @@ shiro demo
 				CustomShiroSessionDAO customSessionManager ExecutorServiceSessionValidationScheduler DefaultWebSecurityManager
 				蠄蜍（从尸体的）衫袋（跳出来），（跳向）金（色）沙（堆）（捕蚊子），（藏在）雨伞（里的）响尾蛇（正在埋伏它）。（缠在）大桦树（上的）蟒（蛇）（暗中观察着这一切）
 				MethodInvokingFactoryBean MethodInvokingFactoryBean DefaultWebSessionManager
-				鳗鱼粪便 
+				鳗鱼粪便，（吸引了一群）蚊蝇（从花苞上飞过来），（于是），（用）大碗（把粪便舀起来），（倒进水里给）水母（吃）
+				JedisShiroSessionRepository shiroManager ShiroFilterFactoryBean lifecycleBeanPostProcessor
+				遮（靠在）树（上），（蠄蜍不小心弄倒了），（触发了）沙（里的）（地）雷，（雷爆后），丝袜（上），石灰（沾满了）花边，（祸不单行），（天降）蓝（色）冰雹（砸烂了）菠萝
 -----------------------------------------------------------------
 
 ehcache
