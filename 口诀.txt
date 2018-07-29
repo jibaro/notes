@@ -805,7 +805,9 @@ shiro demo
 			spring-shiro.xml CustomShiroSessionDAO MethodInvokingFactoryBean JedisShiroSessionRepository
 			尸（体）（躺满）路，蠄蜍（从尸体的）衫袋（跳出来），（朝一堆）鳗鱼粪便（跳去），遮（靠在）树（上），（蠄蜍不小心弄倒了），（触发了）沙（里的）（地）雷
 				CustomShiroSessionDAO customSessionManager ExecutorServiceSessionValidationScheduler DefaultWebSecurityManager
-				蠄蜍（从尸体的）衫袋（跳出来）
+				蠄蜍（从尸体的）衫袋（跳出来），（跳向）金（色）沙（堆）（捕蚊子），（藏在）雨伞（里的）响尾蛇（正在埋伏它）。（缠在）大桦树（上的）蟒（蛇）（暗中观察着这一切）
+				MethodInvokingFactoryBean MethodInvokingFactoryBean DefaultWebSessionManager
+				鳗鱼粪便 
 -----------------------------------------------------------------
 
 ehcache
