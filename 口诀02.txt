@@ -180,3 +180,19 @@ maven多模块
 -----------------------------------------------------------------
 马云（头上戴着）大帽（子），（帽子上有）花，（还镶嵌着）琥珀，（马云伸手）摸屌，（一只）紫（色）（青）蛙（跑了出来），（开始排卵）
 -----------------------------------------------------------------
+
+HttpClient
+
+HttpClient hc = HttpClientBuilder.create().build();
+HttpPost post = new HttpPost("http://localhost:8080/requestToken");
+post.addHeader("Content-type", "application/json");
+Map<String, String> param = new HashMap<String, String>();
+param.put("username", "admin");
+param.put("password", "111111");
+String body = JSON.toJSONString(param); // {"username":"admin","password":"111111"}
+post.setEntity(new StringEntity(body, "utf-8"));
+HttpResponse response = hc.execute(post);
+System.out.println(EntityUtils.toString(response.getEntity()));// {"code":"1","message":"成功","result":"d480198c33d940129210a268f7aa499d"}
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
