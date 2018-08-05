@@ -183,6 +183,7 @@ maven多模块
 
 HttpClient
 
+原始代码：
 HttpClient hc = HttpClientBuilder.create().build();
 HttpPost post = new HttpPost("http://localhost:8080/requestToken");
 post.addHeader("Content-type", "application/json");
@@ -193,6 +194,14 @@ String body = JSON.toJSONString(param); // {"username":"admin","password":"11111
 post.setEntity(new StringEntity(body, "utf-8"));
 HttpResponse response = hc.execute(post);
 System.out.println(EntityUtils.toString(response.getEntity()));// {"code":"1","message":"成功","result":"d480198c33d940129210a268f7aa499d"}
+
+简化代码：
+HttpClient hc = HttpClientBuilder.create().build();
+HttpPost post = new HttpPost(url);
+post.addHeader("Content-type", "application/json");
+post.setEntity(new StringEntity(json, "utf-8"));
+HttpResponse response = hc.execute(post);
+EntityUtils.toString(response.getEntity())
 -----------------------------------------------------------------
 
 -----------------------------------------------------------------
