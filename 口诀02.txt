@@ -184,6 +184,8 @@ maven多模块
 HttpClient
 
 原始代码：
+
+①application/json:
 HttpClient hc = HttpClientBuilder.create().build();
 HttpPost post = new HttpPost("http://localhost:8080/requestToken");
 post.addHeader("Content-type", "application/json");
@@ -195,11 +197,33 @@ post.setEntity(new StringEntity(body, "utf-8"));
 HttpResponse response = hc.execute(post);
 System.out.println(EntityUtils.toString(response.getEntity()));// {"code":"1","message":"成功","result":"d480198c33d940129210a268f7aa499d"}
 
-简化代码：
+②application/x-www-form-urlencoded
+CloseableHttpClient client = HttpClients.createDefault();
+String url = "http://yuntuapi.amap.com/datamanage/table/create";
+HttpPost httpPost = new HttpPost(url);
+// 参数形式为key=value&key=value
+List<NameValuePair> formparams = new ArrayList<NameValuePair>();
+formparams.add(new BasicNameValuePair("key", "060212638b94290e3dd0648c15753b64"));
+formparams.add(new BasicNameValuePair("name", "火狐"));
+// 加utf-8进行编码
+UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
+httpPost.setEntity(uefEntity);
+CloseableHttpResponse response = client.execute(httpPost);
+HttpEntity entity = response.getEntity();
+String result = EntityUtils.toString(entity, "UTF-8");
+System.out.println(result);
+
+简化&整合代码：
 HttpClient hc = HttpClientBuilder.create().build();
 HttpPost post = new HttpPost(url);
+
 post.addHeader("Content-type", "application/json");
 post.setEntity(new StringEntity(json, "utf-8"));
+
+List<NameValuePair> formparams = new ArrayList<NameValuePair>();
+formparams.add(new BasicNameValuePair("key", "value"));
+post.setEntity(new UrlEncodedFormEntity(formparams, "UTF-8"));
+
 HttpResponse response = hc.execute(post);
 EntityUtils.toString(response.getEntity())
 -----------------------------------------------------------------
